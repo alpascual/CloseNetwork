@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nSB-KG-vJa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nSB-KG-vJa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
     </dependencies>
     <scenes>
         <!--Feed Controller1-->
         <scene sceneID="GOo-V9-bif">
             <objects>
-                <viewController storyboardIdentifier="" id="ntZ-TP-fTJ" customClass="FeedController1" sceneMemberID="viewController">
+                <viewController id="ntZ-TP-fTJ" customClass="FeedController1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q9I-q9-3ru">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -98,6 +99,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="Thv-7a-Tc1"/>
                     <connections>
                         <outlet property="feedTableView" destination="JnZ-Fq-wrN" id="l4U-el-suw"/>
@@ -254,6 +256,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="Pkw-Mu-Hcc"/>
                     <connections>
                         <outlet property="feedTableView" destination="6Uv-r3-2iO" id="jTy-7A-TW7"/>
@@ -339,6 +342,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="1OM-Of-u47"/>
                     <connections>
                         <outlet property="feedTableView" destination="yVh-gD-w8s" id="ybu-PP-cBh"/>
@@ -352,6 +356,7 @@
         <scene sceneID="nFp-s1-IzN">
             <objects>
                 <navigationController storyboardIdentifier="FeedController1" id="nSB-KG-vJa" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ooo-bQ-qyV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -370,6 +375,7 @@
         <scene sceneID="AFe-iC-gfE">
             <objects>
                 <navigationController storyboardIdentifier="FeedController2" id="QZ9-pA-zS1" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ERi-KL-KZo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -388,6 +394,7 @@
         <scene sceneID="xIp-gg-qBj">
             <objects>
                 <navigationController storyboardIdentifier="FeedController3" id="NJG-1q-kpG" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pHk-vK-hwd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -499,6 +506,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="suZ-MA-9td"/>
                     <connections>
                         <outlet property="feedTableView" destination="uMg-WS-0aW" id="pxp-sn-JrV"/>
@@ -512,6 +520,7 @@
         <scene sceneID="cTu-QG-ajf">
             <objects>
                 <navigationController storyboardIdentifier="FeedController4" id="RbL-lG-7Rn" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d3r-Nu-suW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
