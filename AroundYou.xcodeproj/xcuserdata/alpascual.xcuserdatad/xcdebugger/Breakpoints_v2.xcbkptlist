@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ADVFlatUI/FeedControllers/Controllers/FeedController1.m"
-            timestampString = "393303687.612873"
+            filePath = "ADVFlatUI/BusinessLogic/PeerToPeerManager.m"
+            timestampString = "393304205.630228"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "-browser:didNotStartBrowsingForPeers:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ADVFlatUI/BusinessLogic/PeerToPeerManager.m"
+            timestampString = "393304209.920467"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "-browser:foundPeer:withDiscoveryInfo:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
