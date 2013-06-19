@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC0831A6175788FD00EDE244"
-               BuildableName = "ADVFlatUI.app"
+               BuildableName = "AroundYou.app"
                BlueprintName = "AroundYou"
                ReferencedContainer = "container:AroundYou.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC0831A6175788FD00EDE244"
-            BuildableName = "ADVFlatUI.app"
+            BuildableName = "AroundYou.app"
             BlueprintName = "AroundYou"
             ReferencedContainer = "container:AroundYou.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC0831A6175788FD00EDE244"
-            BuildableName = "ADVFlatUI.app"
+            BuildableName = "AroundYou.app"
             BlueprintName = "AroundYou"
             ReferencedContainer = "container:AroundYou.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC0831A6175788FD00EDE244"
-            BuildableName = "ADVFlatUI.app"
+            BuildableName = "AroundYou.app"
             BlueprintName = "AroundYou"
             ReferencedContainer = "container:AroundYou.xcodeproj">
          </BuildableReference>
