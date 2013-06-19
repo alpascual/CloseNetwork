@@ -54,35 +54,35 @@
     StoryboardInfo* loginStoryboard = [[StoryboardInfo alloc] initWithName:@"Logins" andStoryboardId:@"LoginStoryboard"];
     loginStoryboard.controllers = @[login1, login2, login3, login4];*/
     
-    ControllerInfo* profile1 = [[ControllerInfo alloc] initWithName:@"Your Profile 1" andControllerId:@"ProfileController1"];
-    ControllerInfo* profile2 = [[ControllerInfo alloc] initWithName:@"Your Profile 2" andControllerId:@"ProfileController2"];
-    ControllerInfo* profile3 = [[ControllerInfo alloc] initWithName:@"Your Profile 3" andControllerId:@"ProfileController3"];
+    /*ControllerInfo* profile1 = [[ControllerInfo alloc] initWithName:@"Your Profile 1" andControllerId:@"ProfileController1"];
+    ControllerInfo* profile2 = [[ControllerInfo alloc] initWithName:@"Your Profile 2" andControllerId:@"ProfileController2"];*/
+    ControllerInfo* profile3 = [[ControllerInfo alloc] initWithName:@"Your Profile" andControllerId:@"ProfileController3"];
     
-    StoryboardInfo* profileStoryboard = [[StoryboardInfo alloc] initWithName:@"User Profiles" andStoryboardId:@"ProfileStoryboard"];
-    profileStoryboard.controllers = @[profile1, profile2, profile3];
+    StoryboardInfo* profileStoryboard = [[StoryboardInfo alloc] initWithName:@"Main Menu" andStoryboardId:@"ProfileStoryboard"];
+    profileStoryboard.controllers = @[profile3];
     
-    ControllerInfo* feed1 = [[ControllerInfo alloc] initWithName:@"Activity Feeds 1" andControllerId:@"FeedController1"];
-    ControllerInfo* feed2 = [[ControllerInfo alloc] initWithName:@"Activity Feeds 2" andControllerId:@"FeedController2"];
+    ControllerInfo* feed1 = [[ControllerInfo alloc] initWithName:@"Who is around you?" andControllerId:@"FeedController1"];
+    /*ControllerInfo* feed2 = [[ControllerInfo alloc] initWithName:@"Activity Feeds 2" andControllerId:@"FeedController2"];
     ControllerInfo* feed3 = [[ControllerInfo alloc] initWithName:@"Activity Feeds 3" andControllerId:@"FeedController3"];
-    ControllerInfo* feed4 = [[ControllerInfo alloc] initWithName:@"Activity Feeds 4" andControllerId:@"FeedController4"];
+    ControllerInfo* feed4 = [[ControllerInfo alloc] initWithName:@"Activity Feeds 4" andControllerId:@"FeedController4"];*/
     
-    StoryboardInfo* feedStoryboard = [[StoryboardInfo alloc] initWithName:@"Activity Feeds" andStoryboardId:@"FeedStoryboard"];
-    feedStoryboard.controllers = @[feed1, feed2, feed3, feed4];
+    StoryboardInfo* feedStoryboard = [[StoryboardInfo alloc] initWithName:@"" andStoryboardId:@"FeedStoryboard"];
+    feedStoryboard.controllers = @[feed1];//, feed2, feed3, feed4];
     
-    ControllerInfo* settings1 = [[ControllerInfo alloc] initWithName:@"Settings Design 1" andControllerId:@"SettingsController1"];
-    ControllerInfo* settings2 = [[ControllerInfo alloc] initWithName:@"Settings Design 2" andControllerId:@"SettingsController2"];
+    ControllerInfo* settings1 = [[ControllerInfo alloc] initWithName:@"Settings" andControllerId:@"SettingsController1"];
+    /*ControllerInfo* settings2 = [[ControllerInfo alloc] initWithName:@"Settings Design 2" andControllerId:@"SettingsController2"];*/
     
-    StoryboardInfo* settingsStoryboard = [[StoryboardInfo alloc] initWithName:@"Settings" andStoryboardId:@"SettingsStoryboard"];
-    settingsStoryboard.controllers = @[settings1, settings2];
+    StoryboardInfo* settingsStoryboard = [[StoryboardInfo alloc] initWithName:@"" andStoryboardId:@"SettingsStoryboard"];
+    settingsStoryboard.controllers = @[settings1];//, settings2];
     
-    ControllerInfo* sidebar1 = [[ControllerInfo alloc] initWithName:@"Sidebar Design 1" andControllerId:@"SidebarController1"];
+    /*ControllerInfo* sidebar1 = [[ControllerInfo alloc] initWithName:@"Sidebar Design 1" andControllerId:@"SidebarController1"];
     ControllerInfo* sidebar2 = [[ControllerInfo alloc] initWithName:@"Sideber Design 2" andControllerId:@"SidebarController2"];
     
     StoryboardInfo* sidebarStoryboard = [[StoryboardInfo alloc] initWithName:@"Sidebars" andStoryboardId:@"SidebarStoryboard"];
-    sidebarStoryboard.controllers = @[sidebar1, sidebar2];
+    sidebarStoryboard.controllers = @[sidebar1, sidebar2];*/
 
     
-    self.storyboards = @[profileStoryboard, feedStoryboard ,settingsStoryboard, sidebarStoryboard];
+    self.storyboards = @[profileStoryboard, feedStoryboard ,settingsStoryboard];
     
     
     self.swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedScreen:)];
