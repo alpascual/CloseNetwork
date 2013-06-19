@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="JDs-ur-PaJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="JDs-ur-PaJ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
     </dependencies>
     <scenes>
         <!--Profile Controller1-->
@@ -9,7 +10,7 @@
             <objects>
                 <viewController storyboardIdentifier="ProfileController1" id="JDs-ur-PaJ" customClass="ProfileController1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="188-FD-6SE" customClass="UIScrollView">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="tbh-WI-pq5">
@@ -159,6 +160,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="bioContainer" destination="i5L-Ew-5Cv" id="3fm-mP-u51"/>
@@ -195,7 +197,7 @@
             <objects>
                 <viewController storyboardIdentifier="ProfileController2" id="95p-AY-6v7" customClass="ProfileController2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vc9-Pu-zRh">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="2th-sp-ffb" customClass="UIScrollView">
@@ -326,6 +328,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="bioContainer" destination="388-Io-beh" id="vRQ-2o-wQ9"/>
                         <outlet property="bioLabel" destination="2Av-LG-TVu" id="8Wp-rr-WI2"/>
@@ -358,7 +361,7 @@
             <objects>
                 <viewController storyboardIdentifier="ProfileController3" id="1Uw-ig-gCt" customClass="ProfileController3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mpC-S7-cWH">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="vEm-3q-sSQ" customClass="UIScrollView">
@@ -394,39 +397,13 @@
                                         <rect key="frame" x="20" y="300" width="280" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RHi-F8-emu">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bio and Card" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RHi-F8-emu">
                                                 <rect key="frame" x="0.0" y="10" width="280" height="49"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="B2L-DS-hs5">
-                                        <rect key="frame" x="20" y="391" width="280" height="155"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ozt-Lj-Ine">
-                                                <rect key="frame" x="61" y="0.0" width="159" height="31"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Kd2-Ji-dZ0">
-                                                <rect key="frame" x="105" y="39" width="70" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="WLB-wX-WPl">
-                                                <rect key="frame" x="190" y="39" width="70" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="FkC-CW-Vgw">
-                                                <rect key="frame" x="20" y="39" width="70" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
@@ -441,14 +418,14 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="FOLLOWERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ejG-hM-mhq">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="EMAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ejG-hM-mhq">
                                                 <rect key="frame" x="3" y="33" width="76" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="FOLLOWERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vQO-2h-b95">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PHONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vQO-2h-b95">
                                                 <rect key="frame" x="102" y="33" width="76" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
@@ -469,7 +446,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="FOLLOWERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HE3-bf-WBn">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DELETE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HE3-bf-WBn">
                                                 <rect key="frame" x="196" y="33" width="76" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
@@ -485,6 +462,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="bioContainer" destination="TI0-zr-Ffm" id="SJ9-rn-oZ4"/>
                         <outlet property="bioLabel" destination="RHi-F8-emu" id="8rV-bs-lYw"/>
@@ -492,11 +470,6 @@
                         <outlet property="followerLabel" destination="ejG-hM-mhq" id="1Nj-0d-qcP"/>
                         <outlet property="followingCountLabel" destination="FW1-IH-C63" id="hdg-Pw-vb6"/>
                         <outlet property="followingLabel" destination="vQO-2h-b95" id="oEM-6A-rqX"/>
-                        <outlet property="friendContainer" destination="B2L-DS-hs5" id="4Uz-1P-Jna"/>
-                        <outlet property="friendImageView1" destination="FkC-CW-Vgw" id="2WT-Z1-0VW"/>
-                        <outlet property="friendImageView2" destination="Kd2-Ji-dZ0" id="EIK-12-7bB"/>
-                        <outlet property="friendImageView3" destination="WLB-wX-WPl" id="4NU-vx-QP3"/>
-                        <outlet property="friendLabel" destination="Ozt-Lj-Ine" id="Y7n-fu-nKr"/>
                         <outlet property="nameLabel" destination="jDa-th-Vb0" id="ITc-C4-qZo"/>
                         <outlet property="overlayView" destination="kPj-Cd-8NU" id="MC9-ri-5Gy"/>
                         <outlet property="profileImageView" destination="JYK-JF-YNH" id="J3w-7a-urm"/>
@@ -512,59 +485,6 @@
         </scene>
     </scenes>
     <classes>
-        <class className="ProfileController1" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileController1.h"/>
-            <relationships>
-                <relationship kind="outlet" name="bioContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="bioLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="bioValueLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="countContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="followerCountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="followerLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="followingCountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="followingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="friendContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="friendImageView1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="friendImageView2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="friendImageView3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="friendLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="joinedContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="joinedLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="joinedValueLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="overlayView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="profileBgImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="profileImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="updateCountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="updateLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ProfileController2" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileController2.h"/>
-            <relationships>
-                <relationship kind="outlet" name="bioContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="bioLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="countContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="followerCountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="followerLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="followingCountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="followingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="friendContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="friendImageView1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="friendImageView2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="friendImageView3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="friendLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="overlayView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="profileBgImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="profileImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="updateCountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="updateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="usernameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
         <class className="ProfileController3" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileController3.h"/>
             <relationships>

@@ -10,6 +10,8 @@
 		76A10DC31771517B00A9B62F /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */; };
 		76A10DC4177152CF00A9B62F /* PeerToPeerManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */; };
 		76A10DC5177152CF00A9B62F /* PeerToPeerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */; };
+		8842FF3917727837005863E4 /* ProfileController3.h in Sources */ = {isa = PBXBuildFile; fileRef = 8842FF37177277D5005863E4 /* ProfileController3.h */; };
+		8842FF3A17727837005863E4 /* ProfileController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842FF38177277D5005863E4 /* ProfileController3.m */; };
 		EC0831AB175788FD00EDE244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AA175788FD00EDE244 /* UIKit.framework */; };
 		EC0831AD175788FD00EDE244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AC175788FD00EDE244 /* Foundation.framework */; };
 		EC0831AF175788FD00EDE244 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AE175788FD00EDE244 /* CoreGraphics.framework */; };
@@ -20,16 +22,13 @@
 		EC0831C1175788FF00EDE244 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0831C0175788FF00EDE244 /* Default-568h@2x.png */; };
 		EC0831CE17578BC300EDE244 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831CD17578BC300EDE244 /* QuartzCore.framework */; };
 		EC28197F1758D6AF004D98D5 /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC28197E1758D6AF004D98D5 /* ProfileStoryboard.storyboard */; };
-		EC2819831758D6E3004D98D5 /* ProfileController1.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2819821758D6E3004D98D5 /* ProfileController1.m */; };
 		EC2819851758D6FF004D98D5 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2819841758D6FF004D98D5 /* LoginStoryboard.storyboard */; };
 		EC2819881758E26F004D98D5 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC2819861758E26F004D98D5 /* profile.jpg */; };
 		EC2819891758E26F004D98D5 /* wine-cork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC2819871758E26F004D98D5 /* wine-cork.jpg */; };
 		EC28198D1758E874004D98D5 /* profile-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC28198A1758E874004D98D5 /* profile-1.jpg */; };
 		EC28198E1758E874004D98D5 /* profile-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC28198B1758E874004D98D5 /* profile-2.jpg */; };
 		EC28198F1758E874004D98D5 /* profile-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC28198C1758E874004D98D5 /* profile-3.jpg */; };
-		EC2819921758ED50004D98D5 /* ProfileController2.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2819911758ED50004D98D5 /* ProfileController2.m */; };
 		EC2819941758EFD5004D98D5 /* bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC2819931758EFD5004D98D5 /* bridge.jpg */; };
-		EC2819971758FA69004D98D5 /* ProfileController3.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2819961758FA69004D98D5 /* ProfileController3.m */; };
 		EC53044A1757956B00A1EA8D /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5304481757956B00A1EA8D /* check.png */; };
 		EC53044B1757956B00A1EA8D /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5304491757956B00A1EA8D /* check@2x.png */; };
 		EC9F5A231760A30800E90B31 /* ControllerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9F5A221760A30800E90B31 /* ControllerInfo.m */; };
@@ -105,6 +104,8 @@
 		76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeerToPeerManager.h; sourceTree = "<group>"; };
 		76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerToPeerManager.m; sourceTree = "<group>"; };
 		76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		8842FF37177277D5005863E4 /* ProfileController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileController3.h; sourceTree = "<group>"; };
+		8842FF38177277D5005863E4 /* ProfileController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileController3.m; sourceTree = "<group>"; };
 		EC0831A7175788FD00EDE244 /* AroundYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0831AA175788FD00EDE244 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC0831AC175788FD00EDE244 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,19 +119,13 @@
 		EC0831C0175788FF00EDE244 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EC0831CD17578BC300EDE244 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EC28197E1758D6AF004D98D5 /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ProfileStoryboard.storyboard; path = Storyboards/ProfileStoryboard.storyboard; sourceTree = "<group>"; };
-		EC2819811758D6E3004D98D5 /* ProfileController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileController1.h; sourceTree = "<group>"; };
-		EC2819821758D6E3004D98D5 /* ProfileController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController1.m; sourceTree = "<group>"; };
 		EC2819841758D6FF004D98D5 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LoginStoryboard.storyboard; path = Storyboards/LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		EC2819861758E26F004D98D5 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = profile.jpg; path = ADVFlatUI/Resources/profile.jpg; sourceTree = "<group>"; };
 		EC2819871758E26F004D98D5 /* wine-cork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wine-cork.jpg"; path = "ADVFlatUI/Resources/wine-cork.jpg"; sourceTree = "<group>"; };
 		EC28198A1758E874004D98D5 /* profile-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "profile-1.jpg"; path = "ADVFlatUI/Resources/profile-1.jpg"; sourceTree = "<group>"; };
 		EC28198B1758E874004D98D5 /* profile-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "profile-2.jpg"; path = "ADVFlatUI/Resources/profile-2.jpg"; sourceTree = "<group>"; };
 		EC28198C1758E874004D98D5 /* profile-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "profile-3.jpg"; path = "ADVFlatUI/Resources/profile-3.jpg"; sourceTree = "<group>"; };
-		EC2819901758ED50004D98D5 /* ProfileController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileController2.h; sourceTree = "<group>"; };
-		EC2819911758ED50004D98D5 /* ProfileController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController2.m; sourceTree = "<group>"; };
 		EC2819931758EFD5004D98D5 /* bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bridge.jpg; path = ADVFlatUI/Resources/bridge.jpg; sourceTree = "<group>"; };
-		EC2819951758FA69004D98D5 /* ProfileController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileController3.h; sourceTree = "<group>"; };
-		EC2819961758FA69004D98D5 /* ProfileController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController3.m; sourceTree = "<group>"; };
 		EC5304481757956B00A1EA8D /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = ADVFlatUI/Resources/check.png; sourceTree = "<group>"; };
 		EC5304491757956B00A1EA8D /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "check@2x.png"; path = "ADVFlatUI/Resources/check@2x.png"; sourceTree = "<group>"; };
 		EC9F5A211760A30800E90B31 /* ControllerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControllerInfo.h; path = Utils/ControllerInfo.h; sourceTree = "<group>"; };
@@ -340,12 +335,8 @@
 		EC2819801758D6E3004D98D5 /* ProfileControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EC2819811758D6E3004D98D5 /* ProfileController1.h */,
-				EC2819821758D6E3004D98D5 /* ProfileController1.m */,
-				EC2819901758ED50004D98D5 /* ProfileController2.h */,
-				EC2819911758ED50004D98D5 /* ProfileController2.m */,
-				EC2819951758FA69004D98D5 /* ProfileController3.h */,
-				EC2819961758FA69004D98D5 /* ProfileController3.m */,
+				8842FF37177277D5005863E4 /* ProfileController3.h */,
+				8842FF38177277D5005863E4 /* ProfileController3.m */,
 			);
 			path = ProfileControllers;
 			sourceTree = "<group>";
@@ -718,6 +709,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8842FF3917727837005863E4 /* ProfileController3.h in Sources */,
+				8842FF3A17727837005863E4 /* ProfileController3.m in Sources */,
 				76A10DC4177152CF00A9B62F /* PeerToPeerManager.h in Sources */,
 				76A10DC5177152CF00A9B62F /* PeerToPeerManager.m in Sources */,
 				EC0831B7175788FE00EDE244 /* main.m in Sources */,
@@ -727,9 +720,6 @@
 				ECF804251757A4D300546626 /* BaseLoginController.m in Sources */,
 				ECF804301757A82800546626 /* LoginController3.m in Sources */,
 				ECF804331757BE3400546626 /* LoginController4.m in Sources */,
-				EC2819831758D6E3004D98D5 /* ProfileController1.m in Sources */,
-				EC2819921758ED50004D98D5 /* ProfileController2.m in Sources */,
-				EC2819971758FA69004D98D5 /* ProfileController3.m in Sources */,
 				ECA8BE8A175CB40D00E300AB /* FeedController2.m in Sources */,
 				ECA8BE8F175CB44800E300AB /* FeedCell2.m in Sources */,
 				ECA8BE92175CB46600E300AB /* FeedCell1.m in Sources */,
