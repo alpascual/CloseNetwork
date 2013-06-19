@@ -143,11 +143,9 @@
     
     NSLog(@"MCNearbyServiceABrowserDelegate :: foundPeer :: PeerID : %@ :: DiscoveryInfo : %@",peerID,info.description);
     
-    NSLog(@"Creamos sesión automáticamente");
     
     
-    
-    [self.browser invitePeer:peerID toSession:self.session withContext:[@"HOLA TIO" dataUsingEncoding:NSUTF8StringEncoding] timeout:10];
+    [self.browser invitePeer:peerID toSession:self.session withContext:[@"message here" dataUsingEncoding:NSUTF8StringEncoding] timeout:10];
     
 }
 
