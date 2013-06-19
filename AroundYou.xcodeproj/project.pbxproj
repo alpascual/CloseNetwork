@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76A10DC31771517B00A9B62F /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */; };
+		76A10DC4177152CF00A9B62F /* PeerToPeerManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */; };
+		76A10DC5177152CF00A9B62F /* PeerToPeerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */; };
 		EC0831AB175788FD00EDE244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AA175788FD00EDE244 /* UIKit.framework */; };
 		EC0831AD175788FD00EDE244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AC175788FD00EDE244 /* Foundation.framework */; };
 		EC0831AF175788FD00EDE244 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AE175788FD00EDE244 /* CoreGraphics.framework */; };
@@ -99,14 +102,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EC0831A7175788FD00EDE244 /* ADVFlatUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADVFlatUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeerToPeerManager.h; sourceTree = "<group>"; };
+		76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerToPeerManager.m; sourceTree = "<group>"; };
+		76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		EC0831A7175788FD00EDE244 /* AroundYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0831AA175788FD00EDE244 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC0831AC175788FD00EDE244 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EC0831AE175788FD00EDE244 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EC0831B2175788FE00EDE244 /* ADVFlatUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ADVFlatUI-Info.plist"; sourceTree = "<group>"; };
+		EC0831B2175788FE00EDE244 /* AroundYou-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AroundYou-Info.plist"; sourceTree = "<group>"; };
 		EC0831B4175788FE00EDE244 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC0831B6175788FE00EDE244 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EC0831B8175788FE00EDE244 /* ADVFlatUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADVFlatUI-Prefix.pch"; sourceTree = "<group>"; };
+		EC0831B8175788FE00EDE244 /* AroundYou-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AroundYou-Prefix.pch"; sourceTree = "<group>"; };
 		EC0831BC175788FF00EDE244 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EC0831BE175788FF00EDE244 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EC0831C0175788FF00EDE244 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -235,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A10DC31771517B00A9B62F /* MultipeerConnectivity.framework in Frameworks */,
 				EC0831CE17578BC300EDE244 /* QuartzCore.framework in Frameworks */,
 				EC0831AB175788FD00EDE244 /* UIKit.framework in Frameworks */,
 				EC0831AD175788FD00EDE244 /* Foundation.framework in Frameworks */,
@@ -245,6 +252,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76A10DBF177150D800A9B62F /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */,
+				76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
 		EC08319E175788FD00EDE244 = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +273,7 @@
 		EC0831A8175788FD00EDE244 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC0831A7175788FD00EDE244 /* ADVFlatUI.app */,
+				EC0831A7175788FD00EDE244 /* AroundYou.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,6 +281,7 @@
 		EC0831A9175788FD00EDE244 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */,
 				EC0831CD17578BC300EDE244 /* QuartzCore.framework */,
 				EC0831AA175788FD00EDE244 /* UIKit.framework */,
 				EC0831AC175788FD00EDE244 /* Foundation.framework */,
@@ -276,6 +293,7 @@
 		EC0831B0175788FE00EDE244 /* ADVFlatUI */ = {
 			isa = PBXGroup;
 			children = (
+				76A10DBF177150D800A9B62F /* BusinessLogic */,
 				ECDA36B7175F934100529F64 /* SidebarControllers */,
 				ECDA3676175F633900529F64 /* SettingsControllers */,
 				ECA8BEB4175CEA3900E300AB /* MainController */,
@@ -295,10 +313,10 @@
 		EC0831B1175788FE00EDE244 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EC0831B2175788FE00EDE244 /* ADVFlatUI-Info.plist */,
+				EC0831B2175788FE00EDE244 /* AroundYou-Info.plist */,
 				EC0831B3175788FE00EDE244 /* InfoPlist.strings */,
 				EC0831B6175788FE00EDE244 /* main.m */,
-				EC0831B8175788FE00EDE244 /* ADVFlatUI-Prefix.pch */,
+				EC0831B8175788FE00EDE244 /* AroundYou-Prefix.pch */,
 				EC0831BC175788FF00EDE244 /* Default.png */,
 				EC0831BE175788FF00EDE244 /* Default@2x.png */,
 				EC0831C0175788FF00EDE244 /* Default-568h@2x.png */,
@@ -594,9 +612,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC0831A6175788FD00EDE244 /* ADVFlatUI */ = {
+		EC0831A6175788FD00EDE244 /* AroundYou */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC0831CA1757890000EDE244 /* Build configuration list for PBXNativeTarget "ADVFlatUI" */;
+			buildConfigurationList = EC0831CA1757890000EDE244 /* Build configuration list for PBXNativeTarget "AroundYou" */;
 			buildPhases = (
 				EC0831A3175788FD00EDE244 /* Sources */,
 				EC0831A4175788FD00EDE244 /* Frameworks */,
@@ -606,9 +624,9 @@
 			);
 			dependencies = (
 			);
-			name = ADVFlatUI;
+			name = AroundYou;
 			productName = ADVFlatUI;
-			productReference = EC0831A7175788FD00EDE244 /* ADVFlatUI.app */;
+			productReference = EC0831A7175788FD00EDE244 /* AroundYou.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -620,7 +638,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "App Design Vault";
 			};
-			buildConfigurationList = EC0831A2175788FD00EDE244 /* Build configuration list for PBXProject "ADVFlatUI" */;
+			buildConfigurationList = EC0831A2175788FD00EDE244 /* Build configuration list for PBXProject "AroundYou" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -632,7 +650,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC0831A6175788FD00EDE244 /* ADVFlatUI */,
+				EC0831A6175788FD00EDE244 /* AroundYou */,
 			);
 		};
 /* End PBXProject section */
@@ -700,6 +718,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A10DC4177152CF00A9B62F /* PeerToPeerManager.h in Sources */,
+				76A10DC5177152CF00A9B62F /* PeerToPeerManager.m in Sources */,
 				EC0831B7175788FE00EDE244 /* main.m in Sources */,
 				ECF8041E17579D4100546626 /* AppDelegate.m in Sources */,
 				ECF8041F17579D4100546626 /* LoginController1.m in Sources */,
@@ -814,9 +834,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ADVFlatUI/ADVFlatUI-Prefix.pch";
-				INFOPLIST_FILE = "ADVFlatUI/ADVFlatUI-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ADVFlatUI/AroundYou-Prefix.pch";
+				INFOPLIST_FILE = "ADVFlatUI/AroundYou-Info.plist";
+				PRODUCT_NAME = AroundYou;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -825,9 +846,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ADVFlatUI/ADVFlatUI-Prefix.pch";
-				INFOPLIST_FILE = "ADVFlatUI/ADVFlatUI-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ADVFlatUI/AroundYou-Prefix.pch";
+				INFOPLIST_FILE = "ADVFlatUI/AroundYou-Info.plist";
+				PRODUCT_NAME = AroundYou;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -835,7 +857,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC0831A2175788FD00EDE244 /* Build configuration list for PBXProject "ADVFlatUI" */ = {
+		EC0831A2175788FD00EDE244 /* Build configuration list for PBXProject "AroundYou" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC0831C81757890000EDE244 /* Debug */,
@@ -844,7 +866,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC0831CA1757890000EDE244 /* Build configuration list for PBXNativeTarget "ADVFlatUI" */ = {
+		EC0831CA1757890000EDE244 /* Build configuration list for PBXNativeTarget "AroundYou" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC0831CB1757890000EDE244 /* Debug */,

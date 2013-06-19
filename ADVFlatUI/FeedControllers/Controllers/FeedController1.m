@@ -34,6 +34,10 @@
     
     self.title = @"Feed";
     
+    PeerToPeerManager *manager = [[PeerToPeerManager alloc] init];
+    [manager showViewController];
+    
+    
     self.feedTableView.dataSource = self;
     
     self.feedTableView.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];

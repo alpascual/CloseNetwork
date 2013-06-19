@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MultipeerConnectivity/MultipeerConnectivity.h>
 
 @interface PeerToPeerManager : NSObject
+
+@property (nonatomic,strong) MCPeerPickerViewController *peer;
+@property (strong, nonatomic) MCSession * session;
+@property (strong, nonatomic) MCPeerID * myPeerId;
+@property (strong, nonatomic) MCNearbyServiceBrowser *browser;
+@property (strong, nonatomic) MCNearbyServiceAdvertiser * advertiser;
+
+- (void) showViewController;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PeerToPeerManager.h"
 
 @interface FeedController1 : UIViewController <UITableViewDataSource>
 
