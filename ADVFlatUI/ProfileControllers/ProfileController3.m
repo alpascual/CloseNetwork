@@ -134,4 +134,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)editPressed:(id)sender
+{
+    [self performSegueWithIdentifier:@"editSegue" sender:self];
+}
+
 @end

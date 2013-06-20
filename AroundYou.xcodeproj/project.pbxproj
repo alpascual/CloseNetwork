@@ -12,6 +12,8 @@
 		76A10DC5177152CF00A9B62F /* PeerToPeerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */; };
 		8842FF3917727837005863E4 /* ProfileController3.h in Sources */ = {isa = PBXBuildFile; fileRef = 8842FF37177277D5005863E4 /* ProfileController3.h */; };
 		8842FF3A17727837005863E4 /* ProfileController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842FF38177277D5005863E4 /* ProfileController3.m */; };
+		8842FF3D17738475005863E4 /* EditProfileViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8842FF3B17738448005863E4 /* EditProfileViewController.h */; };
+		8842FF3E17738475005863E4 /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842FF3C17738448005863E4 /* EditProfileViewController.m */; };
 		EC0831AB175788FD00EDE244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AA175788FD00EDE244 /* UIKit.framework */; };
 		EC0831AD175788FD00EDE244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AC175788FD00EDE244 /* Foundation.framework */; };
 		EC0831AF175788FD00EDE244 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AE175788FD00EDE244 /* CoreGraphics.framework */; };
@@ -106,6 +108,8 @@
 		76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		8842FF37177277D5005863E4 /* ProfileController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileController3.h; sourceTree = "<group>"; };
 		8842FF38177277D5005863E4 /* ProfileController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileController3.m; sourceTree = "<group>"; };
+		8842FF3B17738448005863E4 /* EditProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
+		8842FF3C17738448005863E4 /* EditProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
 		EC0831A7175788FD00EDE244 /* AroundYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0831AA175788FD00EDE244 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC0831AC175788FD00EDE244 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -252,6 +256,8 @@
 			children = (
 				76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */,
 				76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */,
+				8842FF3B17738448005863E4 /* EditProfileViewController.h */,
+				8842FF3C17738448005863E4 /* EditProfileViewController.m */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -709,6 +715,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8842FF3D17738475005863E4 /* EditProfileViewController.h in Sources */,
+				8842FF3E17738475005863E4 /* EditProfileViewController.m in Sources */,
 				8842FF3917727837005863E4 /* ProfileController3.h in Sources */,
 				8842FF3A17727837005863E4 /* ProfileController3.m in Sources */,
 				76A10DC4177152CF00A9B62F /* PeerToPeerManager.h in Sources */,
