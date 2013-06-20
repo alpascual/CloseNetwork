@@ -98,6 +98,12 @@
     else {
         //self.profileImageView.image = [UIImage imageNamed:@"profile.jpg"];
         // Show cool alert TSMessage to click to set their image
+        
+        [TSMessage showNotificationInViewController:self
+                                          withTitle:@"Image not set"
+                                        withMessage:@"Click the image circle to upload your picture."
+                                           withType:TSMessageNotificationTypeWarning];
+        
     }
     
     
@@ -117,6 +123,15 @@
     
     self.scrollView.contentSize = CGSizeMake(320, 590);
     self.scrollView.backgroundColor = [UIColor whiteColor];
+}
+
+
+- (IBAction)clickLibraryButton:(id)sender {
+    self.picker = [[UIImagePickerController alloc] init];
+    self.picker.delegate = self;
+    self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+  
+    [self presentViewController:self.picker animated:YES completion:nil];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker

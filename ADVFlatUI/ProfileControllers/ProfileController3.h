@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSMessage.h"
 
-@interface ProfileController3 : UIViewController
+@interface ProfileController3 : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIImageView* profileImageView;
 
@@ -38,6 +39,8 @@
 @property (nonatomic, weak) IBOutlet UIView* bioContainer;
 
 @property (nonatomic, weak) IBOutlet UIScrollView* scrollView;
+
+@property (nonatomic,strong) UIImagePickerController *picker;
 
 
 - (void) setLabels;
