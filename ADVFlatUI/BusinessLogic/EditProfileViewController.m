@@ -45,6 +45,12 @@
     self.phoneLabel.textColor =  mainColor;
     self.phoneLabel.font =  [UIFont fontWithName:boldItalicFontName size:18.0f];
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    self.name.text = [defaults objectForKey:@"name"];
+    self.email.text = [defaults objectForKey:@"email"];
+    self.phone.text = [defaults objectForKey:@"phone"];
+    self.twitter.text = [defaults objectForKey:@"twitter"];
+    self.bio.text = [defaults objectForKey:@"bio"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,7 +65,13 @@
 
 - (IBAction)savePressed:(id)sender
 {
-    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.name.text forKey:@"name"];
+    [defaults setObject:self.email.text forKey:@"email"];
+    [defaults setObject:self.phone.text forKey:@"phone"];
+    [defaults setObject:self.twitter.text forKey:@"twitter"];
+    [defaults setObject:self.bio.text forKey:@"bio"];
+    [defaults synchronize];
 }
 
 @end
