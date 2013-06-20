@@ -92,13 +92,13 @@
     
     //TODO, let the user click the image to change it
     // change that for the twitter image
-    if ( [defaults objectForKey:@"twitter"] != nil) {
-        NSString *imageUrl = [[NSString alloc] initWithFormat:@"https://api.twitter.com/1/users/profile_image?screen_name=%@", [defaults objectForKey:@"twitter"]];
-        NSData *tempData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
-        self.profileImageView.image = [UIImage imageWithData:tempData];
+    if ( [defaults objectForKey:@"image"] != nil) {
+        self.profileImageView.image = [defaults objectForKey:@"image"];
     }
-    else
-        self.profileImageView.image = [UIImage imageNamed:@"profile.jpg"];
+    else {
+        //self.profileImageView.image = [UIImage imageNamed:@"profile.jpg"];
+        // Show cool alert TSMessage to click to set their image
+    }
     
     
     self.profileImageView.contentMode = UIViewContentModeScaleAspectFill;
@@ -117,6 +117,19 @@
     
     self.scrollView.contentSize = CGSizeMake(320, 590);
     self.scrollView.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker
+                didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    NSLog(@"returned from library");
+    
+    self.profileImageView.image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.profileImageView.image forKey:@"image"];
+    [defaults synchronize];
+   
 }
 
 -(void)styleFriendProfileImage:(UIImageView*)imageView withImageNamed:(NSString*)imageName andColor:(UIColor*)color{
