@@ -113,6 +113,15 @@
     self.profileImageView.layer.cornerRadius = 55.0f;
     self.profileImageView.layer.borderColor = imageBorderColor.CGColor;
     
+    //Set a tap on the image
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]
+                                             initWithTarget:self action:@selector(clickEventOnImage:)];
+    [tapRecognizer setNumberOfTouchesRequired:1];
+    [tapRecognizer setDelegate:self];
+    //Don't forget to set the userInteractionEnabled to YES, by default It's NO.
+    self.profileImageView.userInteractionEnabled = YES;
+    [self.profileImageView addGestureRecognizer:tapRecognizer];
+    
     self.bioContainer.layer.borderColor = [UIColor whiteColor].CGColor;
     self.bioContainer.layer.borderWidth = 4.0f;
     self.bioContainer.layer.cornerRadius = 5.0f;
@@ -126,7 +135,8 @@
 }
 
 
-- (IBAction)clickLibraryButton:(id)sender {
+-(void) clickEventOnImage:(id) sender
+{
     self.picker = [[UIImagePickerController alloc] init];
     self.picker.delegate = self;
     self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;

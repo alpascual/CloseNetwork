@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TSMessage.h"
 
-@interface ProfileController3 : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface ProfileController3 : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIImageView* profileImageView;
 

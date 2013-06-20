@@ -20,6 +20,20 @@
 		8842FF611773BCE1005863E4 /* UIColor+MLColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842FF491773BB40005863E4 /* UIColor+MLColorAdditions.m */; };
 		8842FF621773BCFF005863E4 /* TSMessageView.h in Sources */ = {isa = PBXBuildFile; fileRef = 8842FF5C1773BB40005863E4 /* TSMessageView.h */; };
 		8842FF631773BCFF005863E4 /* TSMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842FF5D1773BB40005863E4 /* TSMessageView.m */; };
+		8842FF721773BFE9005863E4 /* NotificationBackgroundError.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF4D1773BB40005863E4 /* NotificationBackgroundError.png */; };
+		8842FF731773BFE9005863E4 /* NotificationBackgroundError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF4E1773BB40005863E4 /* NotificationBackgroundError@2x.png */; };
+		8842FF741773BFE9005863E4 /* NotificationBackgroundErrorIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF4F1773BB40005863E4 /* NotificationBackgroundErrorIcon.png */; };
+		8842FF751773BFE9005863E4 /* NotificationBackgroundErrorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF501773BB40005863E4 /* NotificationBackgroundErrorIcon@2x.png */; };
+		8842FF761773BFE9005863E4 /* NotificationBackgroundMessage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF511773BB40005863E4 /* NotificationBackgroundMessage.png */; };
+		8842FF771773BFE9005863E4 /* NotificationBackgroundMessage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF521773BB40005863E4 /* NotificationBackgroundMessage@2x.png */; };
+		8842FF781773BFE9005863E4 /* NotificationBackgroundSuccess.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF531773BB40005863E4 /* NotificationBackgroundSuccess.png */; };
+		8842FF791773BFE9005863E4 /* NotificationBackgroundSuccess@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF541773BB40005863E4 /* NotificationBackgroundSuccess@2x.png */; };
+		8842FF7A1773BFE9005863E4 /* NotificationBackgroundSuccessIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF551773BB40005863E4 /* NotificationBackgroundSuccessIcon.png */; };
+		8842FF7B1773BFE9005863E4 /* NotificationBackgroundSuccessIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF561773BB40005863E4 /* NotificationBackgroundSuccessIcon@2x.png */; };
+		8842FF7C1773BFE9005863E4 /* NotificationBackgroundWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF571773BB40005863E4 /* NotificationBackgroundWarning.png */; };
+		8842FF7D1773BFE9005863E4 /* NotificationBackgroundWarning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF581773BB40005863E4 /* NotificationBackgroundWarning@2x.png */; };
+		8842FF7E1773BFE9005863E4 /* NotificationBackgroundWarningIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF591773BB40005863E4 /* NotificationBackgroundWarningIcon.png */; };
+		8842FF7F1773BFE9005863E4 /* NotificationBackgroundWarningIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF5A1773BB40005863E4 /* NotificationBackgroundWarningIcon@2x.png */; };
 		EC0831AB175788FD00EDE244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AA175788FD00EDE244 /* UIKit.framework */; };
 		EC0831AD175788FD00EDE244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AC175788FD00EDE244 /* Foundation.framework */; };
 		EC0831AF175788FD00EDE244 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AE175788FD00EDE244 /* CoreGraphics.framework */; };
@@ -757,6 +771,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8842FF721773BFE9005863E4 /* NotificationBackgroundError.png in Resources */,
+				8842FF731773BFE9005863E4 /* NotificationBackgroundError@2x.png in Resources */,
+				8842FF741773BFE9005863E4 /* NotificationBackgroundErrorIcon.png in Resources */,
+				8842FF751773BFE9005863E4 /* NotificationBackgroundErrorIcon@2x.png in Resources */,
+				8842FF761773BFE9005863E4 /* NotificationBackgroundMessage.png in Resources */,
+				8842FF771773BFE9005863E4 /* NotificationBackgroundMessage@2x.png in Resources */,
+				8842FF781773BFE9005863E4 /* NotificationBackgroundSuccess.png in Resources */,
+				8842FF791773BFE9005863E4 /* NotificationBackgroundSuccess@2x.png in Resources */,
+				8842FF7A1773BFE9005863E4 /* NotificationBackgroundSuccessIcon.png in Resources */,
+				8842FF7B1773BFE9005863E4 /* NotificationBackgroundSuccessIcon@2x.png in Resources */,
+				8842FF7C1773BFE9005863E4 /* NotificationBackgroundWarning.png in Resources */,
+				8842FF7D1773BFE9005863E4 /* NotificationBackgroundWarning@2x.png in Resources */,
+				8842FF7E1773BFE9005863E4 /* NotificationBackgroundWarningIcon.png in Resources */,
+				8842FF7F1773BFE9005863E4 /* NotificationBackgroundWarningIcon@2x.png in Resources */,
 				EC0831B5175788FE00EDE244 /* InfoPlist.strings in Resources */,
 				EC0831BD175788FF00EDE244 /* Default.png in Resources */,
 				EC0831BF175788FF00EDE244 /* Default@2x.png in Resources */,
