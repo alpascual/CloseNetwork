@@ -72,6 +72,8 @@
     [defaults setObject:self.twitter.text forKey:@"twitter"];
     [defaults setObject:self.bio.text forKey:@"bio"];
     [defaults synchronize];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

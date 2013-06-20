@@ -424,9 +424,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="12009" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XOe-HH-rN1">
-                                                <rect key="frame" x="-7" y="8" width="96" height="30"/>
+                                                <rect key="frame" x="-7" y="8" width="164" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -438,30 +438,16 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PHONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vQO-2h-b95">
-                                                <rect key="frame" x="102" y="33" width="76" height="21"/>
+                                                <rect key="frame" x="184" y="33" width="76" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="12009" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FW1-IH-C63">
-                                                <rect key="frame" x="92" y="8" width="96" height="30"/>
+                                                <rect key="frame" x="158" y="8" width="131" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="12009" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RGZ-Yu-VTD">
-                                                <rect key="frame" x="186" y="8" width="96" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DELETE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HE3-bf-WBn">
-                                                <rect key="frame" x="196" y="33" width="76" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -486,8 +472,6 @@
                         <outlet property="overlayView" destination="kPj-Cd-8NU" id="MC9-ri-5Gy"/>
                         <outlet property="profileImageView" destination="JYK-JF-YNH" id="J3w-7a-urm"/>
                         <outlet property="scrollView" destination="vEm-3q-sSQ" id="iDP-ef-MhK"/>
-                        <outlet property="updateCountLabel" destination="RGZ-Yu-VTD" id="sSY-xI-Sxj"/>
-                        <outlet property="updateLabel" destination="HE3-bf-WBn" id="vXz-kb-BWW"/>
                         <outlet property="usernameLabel" destination="OGi-R7-lo0" id="mHs-p3-TNG"/>
                         <segue destination="qy9-WS-BvX" kind="modal" identifier="editSegue" id="hiG-cg-H5K"/>
                     </connections>
@@ -651,11 +635,6 @@
                 <relationship kind="outlet" name="followerLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="followingCountLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="followingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="friendContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="friendImageView1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="friendImageView2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="friendImageView3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="friendLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="overlayView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="profileBgImageView" candidateClass="UIImageView"/>

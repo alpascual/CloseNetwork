@@ -29,32 +29,43 @@
 {
     [super viewDidLoad];
 	
+    [self setLabels];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self setLabels];
+}
+
+- (void) setLabels
+{
     UIColor* mainColor = [UIColor colorWithRed:28.0/255 green:158.0/255 blue:121.0/255 alpha:1.0f];
     UIColor* imageBorderColor = [UIColor colorWithRed:28.0/255 green:158.0/255 blue:121.0/255 alpha:0.4f];
     
     NSString* fontName = @"Avenir-Book";
     NSString* boldItalicFontName = @"Avenir-BlackOblique";
-    NSString* boldFontName = @"Avenir-Black";
+      
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     
     self.nameLabel.textColor =  mainColor;
     self.nameLabel.font =  [UIFont fontWithName:boldItalicFontName size:18.0f];
-    self.nameLabel.text = @"Maria Llewellyngot";
+    self.nameLabel.text = [defaults objectForKey:@"name"];
     
     self.usernameLabel.textColor =  mainColor;
     self.usernameLabel.font =  [UIFont fontWithName:fontName size:14.0f];
-    self.usernameLabel.text = @"@llewellyngot";
+    self.usernameLabel.text = [[NSString alloc] initWithFormat:@"@%@", [defaults objectForKey:@"twitter"] ];
     
     UIFont* countLabelFont = [UIFont fontWithName:boldItalicFontName size:20.0f];
     UIColor* countColor = mainColor;
     
     self.followerCountLabel.textColor =  countColor;
     self.followerCountLabel.font =  countLabelFont;
-    self.followerCountLabel.text = @"132k";
+    self.followerCountLabel.text = [defaults objectForKey:@"email"];
     
     self.followingCountLabel.textColor =  countColor;
     self.followingCountLabel.font =  countLabelFont;
-    self.followingCountLabel.text = @"200";
+    self.followingCountLabel.text = [defaults objectForKey:@"phone"];
     
     self.updateCountLabel.textColor =  countColor;
     self.updateCountLabel.font =  countLabelFont;
@@ -64,26 +75,32 @@
     
     self.followerLabel.textColor =  mainColor;
     self.followerLabel.font =  socialFont;
-    self.followerLabel.text = @"FOLLOWERS";
+    self.followerLabel.text = @"EMAIL";
     
     self.followingLabel.textColor =  mainColor;
     self.followingLabel.font =  socialFont;
-    self.followingLabel.text = @"FOLLOWING";
+    self.followingLabel.text = @"PHONE";
     
     self.updateLabel.textColor =  mainColor;
     self.updateLabel.font =  socialFont;
     self.updateLabel.text = @"UPDATES";
     
-    
     self.bioLabel.textColor =  mainColor;
     self.bioLabel.font =  [UIFont fontWithName:fontName size:14.0f];
-    self.bioLabel.text = @"Founder, CEO of Mavin Records, Entrepreneur mom and action gal";
+    self.bioLabel.text =  [defaults objectForKey:@"bio"];
     
-    self.friendLabel.textColor =  mainColor;
-    self.friendLabel.font =  [UIFont fontWithName:boldFontName size:18.0f];;
-    self.friendLabel.text = @"Friends";
     
-    self.profileImageView.image = [UIImage imageNamed:@"profile.jpg"];
+    //TODO, let the user click the image to change it
+    // change that for the twitter image
+    if ( [defaults objectForKey:@"twitter"] != nil) {
+        NSString *imageUrl = [[NSString alloc] initWithFormat:@"https://api.twitter.com/1/users/profile_image?screen_name=%@", [defaults objectForKey:@"twitter"]];
+        NSData *tempData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
+        self.profileImageView.image = [UIImage imageWithData:tempData];
+    }
+    else
+        self.profileImageView.image = [UIImage imageNamed:@"profile.jpg"];
+    
+    
     self.profileImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.profileImageView.clipsToBounds = YES;
     self.profileImageView.layer.borderWidth = 4.0f;
@@ -93,15 +110,6 @@
     self.bioContainer.layer.borderColor = [UIColor whiteColor].CGColor;
     self.bioContainer.layer.borderWidth = 4.0f;
     self.bioContainer.layer.cornerRadius = 5.0f;
-    
-    self.friendContainer.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.friendContainer.layer.borderWidth = 4.0f;
-    self.friendContainer.clipsToBounds = YES;
-    self.friendContainer.layer.cornerRadius = 5.0f;
-    
-    [self styleFriendProfileImage:self.friendImageView1 withImageNamed:@"profile-1.jpg" andColor:imageBorderColor];
-    [self styleFriendProfileImage:self.friendImageView2 withImageNamed:@"profile-2.jpg" andColor:imageBorderColor];
-    [self styleFriendProfileImage:self.friendImageView3 withImageNamed:@"profile-3.jpg" andColor:imageBorderColor];
     
     [self addDividerToView:self.scrollView atLocation:230];
     [self addDividerToView:self.scrollView atLocation:300];
