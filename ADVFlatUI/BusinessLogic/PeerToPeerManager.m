@@ -38,6 +38,9 @@
     self.advertiser.delegate = self;
     
     [self.advertiser startAdvertisingPeer];
+    
+    self.peer = [[MCPeerPickerViewController alloc] initWithBrowser:self.browser session:self.session];
+    
 }
 
 

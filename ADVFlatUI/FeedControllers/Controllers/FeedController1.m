@@ -54,7 +54,29 @@
     timer = nil;
     
     [self.manager showViewController];
+    self.manager.peer.delegate = self;
+    [self presentViewController:self.manager.peer animated:YES completion:nil];
 }
+
+// Picker controller delegate
+// Notifies the delegate, when the user presses start or when all invited peers have either accepted or rejected invitations.
+- (void)peerPickerViewController:(MCPeerPickerViewController *)picker didConnectPeers:(NSArray *)peerIDs
+{
+    NSLog(@"all invited peers %@", peerIDs);
+}
+
+// Notifies delegate that the user cancelled the picker.
+- (void)peerPickerViewControllerWasCancelled:(MCPeerPickerViewController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+// Notifies delegate that a peer was found; discoveryInfo can be used to determine whether the peer should be presented to the user, and the delegate should return a YES if the peer should be presented; this method is optional, if not implemented every nearby peer will be presented to the user.
+- (BOOL)peerPickerViewController:(MCPeerPickerViewController *)picker shouldPresentNearbyPeer:(MCPeerID *)peerID withDiscoveryInfo:(NSDictionary *)info
+{
+    return YES;
+}
+
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

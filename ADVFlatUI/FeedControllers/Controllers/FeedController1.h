@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PeerToPeerManager.h"
 
-@interface FeedController1 : UIViewController <UITableViewDataSource>
+@interface FeedController1 : UIViewController <UITableViewDataSource, MCPeerPickerViewControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UITableView* feedTableView;
 @property (nonatomic, strong) PeerToPeerManager *manager;
