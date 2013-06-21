@@ -34,6 +34,7 @@
 		8842FF7D1773BFE9005863E4 /* NotificationBackgroundWarning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF581773BB40005863E4 /* NotificationBackgroundWarning@2x.png */; };
 		8842FF7E1773BFE9005863E4 /* NotificationBackgroundWarningIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF591773BB40005863E4 /* NotificationBackgroundWarningIcon.png */; };
 		8842FF7F1773BFE9005863E4 /* NotificationBackgroundWarningIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF5A1773BB40005863E4 /* NotificationBackgroundWarningIcon@2x.png */; };
+		8842FF801774CD61005863E4 /* design.json in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF4B1773BB40005863E4 /* design.json */; };
 		EC0831AB175788FD00EDE244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AA175788FD00EDE244 /* UIKit.framework */; };
 		EC0831AD175788FD00EDE244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AC175788FD00EDE244 /* Foundation.framework */; };
 		EC0831AF175788FD00EDE244 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AE175788FD00EDE244 /* CoreGraphics.framework */; };
@@ -64,7 +65,6 @@
 		ECA8BE80175CABE500E300AB /* heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA8BE7C175CABE500E300AB /* heart@2x.png */; };
 		ECA8BE86175CAF3A00E300AB /* feed-bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECA8BE84175CAF3A00E300AB /* feed-bridge.jpg */; };
 		ECA8BE87175CAF3A00E300AB /* feed-armchair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECA8BE85175CAF3A00E300AB /* feed-armchair.jpg */; };
-		ECA8BE8A175CB40D00E300AB /* FeedController2.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA8BE89175CB40D00E300AB /* FeedController2.m */; };
 		ECA8BE8F175CB44800E300AB /* FeedCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA8BE8E175CB44800E300AB /* FeedCell2.m */; };
 		ECA8BE92175CB46600E300AB /* FeedCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA8BE90175CB46600E300AB /* FeedCell1.m */; };
 		ECA8BE95175CB47000E300AB /* FeedController1.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA8BE93175CB47000E300AB /* FeedController1.m */; };
@@ -73,9 +73,7 @@
 		ECA8BE9C175CD45800E300AB /* compose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA8BE98175CD45800E300AB /* compose@2x.png */; };
 		ECA8BE9D175CD45800E300AB /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA8BE99175CD45800E300AB /* menu@2x.png */; };
 		ECA8BEA8175CDAAB00E300AB /* FeedCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA8BEA7175CDAAB00E300AB /* FeedCell3.m */; };
-		ECA8BEAB175CDAC300E300AB /* FeedController3.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA8BEAA175CDAC300E300AB /* FeedController3.m */; };
 		ECA8BEAE175CE0C700E300AB /* FeedCell4.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA8BEAD175CE0C600E300AB /* FeedCell4.m */; };
-		ECA8BEB1175CE0D900E300AB /* FeedController4.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA8BEB0175CE0D800E300AB /* FeedController4.m */; };
 		ECA8BEB3175CE9DD00E300AB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA8BEB2175CE9DD00E300AB /* MainStoryboard.storyboard */; };
 		ECA8BEB7175CEA5400E300AB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA8BEB6175CEA5300E300AB /* MainViewController.m */; };
 		ECDA3675175F62CE00529F64 /* SettingsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDA3674175F62CE00529F64 /* SettingsStoryboard.storyboard */; };
@@ -190,8 +188,6 @@
 		ECA8BE7C175CABE500E300AB /* heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart@2x.png"; path = "ADVFlatUI/Resources/heart@2x.png"; sourceTree = "<group>"; };
 		ECA8BE84175CAF3A00E300AB /* feed-bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "feed-bridge.jpg"; path = "ADVFlatUI/Resources/feed-bridge.jpg"; sourceTree = "<group>"; };
 		ECA8BE85175CAF3A00E300AB /* feed-armchair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "feed-armchair.jpg"; path = "ADVFlatUI/Resources/feed-armchair.jpg"; sourceTree = "<group>"; };
-		ECA8BE88175CB40D00E300AB /* FeedController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedController2.h; path = FeedControllers/Controllers/FeedController2.h; sourceTree = "<group>"; };
-		ECA8BE89175CB40D00E300AB /* FeedController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedController2.m; path = FeedControllers/Controllers/FeedController2.m; sourceTree = "<group>"; };
 		ECA8BE8D175CB44800E300AB /* FeedCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedCell2.h; path = FeedControllers/Cells/FeedCell2.h; sourceTree = "<group>"; };
 		ECA8BE8E175CB44800E300AB /* FeedCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedCell2.m; path = FeedControllers/Cells/FeedCell2.m; sourceTree = "<group>"; };
 		ECA8BE90175CB46600E300AB /* FeedCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedCell1.m; path = FeedControllers/Cells/FeedCell1.m; sourceTree = "<group>"; };
@@ -204,12 +200,8 @@
 		ECA8BE99175CD45800E300AB /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "ADVFlatUI/Resources/menu@2x.png"; sourceTree = "<group>"; };
 		ECA8BEA6175CDAAA00E300AB /* FeedCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedCell3.h; path = FeedControllers/Cells/FeedCell3.h; sourceTree = "<group>"; };
 		ECA8BEA7175CDAAB00E300AB /* FeedCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedCell3.m; path = FeedControllers/Cells/FeedCell3.m; sourceTree = "<group>"; };
-		ECA8BEA9175CDAC200E300AB /* FeedController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedController3.h; path = FeedControllers/Controllers/FeedController3.h; sourceTree = "<group>"; };
-		ECA8BEAA175CDAC300E300AB /* FeedController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedController3.m; path = FeedControllers/Controllers/FeedController3.m; sourceTree = "<group>"; };
 		ECA8BEAC175CE0C600E300AB /* FeedCell4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedCell4.h; path = FeedControllers/Cells/FeedCell4.h; sourceTree = "<group>"; };
 		ECA8BEAD175CE0C600E300AB /* FeedCell4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedCell4.m; path = FeedControllers/Cells/FeedCell4.m; sourceTree = "<group>"; };
-		ECA8BEAF175CE0D800E300AB /* FeedController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedController4.h; path = FeedControllers/Controllers/FeedController4.h; sourceTree = "<group>"; };
-		ECA8BEB0175CE0D800E300AB /* FeedController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedController4.m; path = FeedControllers/Controllers/FeedController4.m; sourceTree = "<group>"; };
 		ECA8BEB2175CE9DD00E300AB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = Storyboards/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		ECA8BEB5175CEA5300E300AB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = MainController/MainViewController.h; sourceTree = "<group>"; };
 		ECA8BEB6175CEA5300E300AB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = MainController/MainViewController.m; sourceTree = "<group>"; };
@@ -534,12 +526,6 @@
 			children = (
 				ECA8BE94175CB47000E300AB /* FeedController1.h */,
 				ECA8BE93175CB47000E300AB /* FeedController1.m */,
-				ECA8BE88175CB40D00E300AB /* FeedController2.h */,
-				ECA8BE89175CB40D00E300AB /* FeedController2.m */,
-				ECA8BEA9175CDAC200E300AB /* FeedController3.h */,
-				ECA8BEAA175CDAC300E300AB /* FeedController3.m */,
-				ECA8BEAF175CE0D800E300AB /* FeedController4.h */,
-				ECA8BEB0175CE0D800E300AB /* FeedController4.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -771,6 +757,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8842FF801774CD61005863E4 /* design.json in Resources */,
 				8842FF721773BFE9005863E4 /* NotificationBackgroundError.png in Resources */,
 				8842FF731773BFE9005863E4 /* NotificationBackgroundError@2x.png in Resources */,
 				8842FF741773BFE9005863E4 /* NotificationBackgroundErrorIcon.png in Resources */,
@@ -862,14 +849,11 @@
 				ECF804251757A4D300546626 /* BaseLoginController.m in Sources */,
 				ECF804301757A82800546626 /* LoginController3.m in Sources */,
 				ECF804331757BE3400546626 /* LoginController4.m in Sources */,
-				ECA8BE8A175CB40D00E300AB /* FeedController2.m in Sources */,
 				ECA8BE8F175CB44800E300AB /* FeedCell2.m in Sources */,
 				ECA8BE92175CB46600E300AB /* FeedCell1.m in Sources */,
 				ECA8BE95175CB47000E300AB /* FeedController1.m in Sources */,
 				ECA8BEA8175CDAAB00E300AB /* FeedCell3.m in Sources */,
-				ECA8BEAB175CDAC300E300AB /* FeedController3.m in Sources */,
 				ECA8BEAE175CE0C700E300AB /* FeedCell4.m in Sources */,
-				ECA8BEB1175CE0D900E300AB /* FeedController4.m in Sources */,
 				ECA8BEB7175CEA5400E300AB /* MainViewController.m in Sources */,
 				ECDA3680175F639400529F64 /* SettingsController1.m in Sources */,
 				ECDA3683175F63AB00529F64 /* SettingsCell1.m in Sources */,

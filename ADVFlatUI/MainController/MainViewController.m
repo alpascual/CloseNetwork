@@ -55,7 +55,7 @@
     ControllerInfo* feed1 = [[ControllerInfo alloc] initWithName:@"Who is around you?" andControllerId:@"FeedController1"];
     
     StoryboardInfo* feedStoryboard = [[StoryboardInfo alloc] initWithName:@"" andStoryboardId:@"FeedStoryboard"];
-    feedStoryboard.controllers = @[feed1];//, feed2, feed3, feed4];
+    feedStoryboard.controllers = @[feed1];
     
     ControllerInfo* settings1 = [[ControllerInfo alloc] initWithName:@"Settings" andControllerId:@"SettingsController1"];
     

@@ -32,11 +32,12 @@
 
     [self styleNavigationBarWithFontName:boldFontName];
     
-    self.title = @"Feed";
+    self.title = @"Around you";
     
     PeerToPeerManager *manager = [[PeerToPeerManager alloc] init];
     [manager showViewController];
     
+    // create the database source around here?
     
     self.feedTableView.dataSource = self;
     
