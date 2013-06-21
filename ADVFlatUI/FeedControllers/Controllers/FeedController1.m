@@ -34,8 +34,10 @@
     
     self.title = @"Around you";
     
-    PeerToPeerManager *manager = [[PeerToPeerManager alloc] init];
-    [manager showViewController];
+    self.manager = [[PeerToPeerManager alloc] init];
+    
+    self.delaytimer = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:
+                       @selector(delayManager:) userInfo:nil repeats:NO];
     
     // create the database source around here?
     
@@ -45,6 +47,15 @@
     self.feedTableView.separatorColor = [UIColor clearColor];
     
 }
+
+- (void)delayManager:(NSTimer *)timer
+{
+    [timer invalidate];
+    timer = nil;
+    
+    [self.manager showViewController];
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
