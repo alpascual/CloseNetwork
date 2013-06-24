@@ -92,8 +92,9 @@
     
     //TODO, let the user click the image to change it
     // change that for the twitter image
-    if ( [defaults objectForKey:@"image"] != nil) {
-        self.profileImageView.image = [defaults objectForKey:@"image"];
+    if ( [defaults objectForKey:@"profile_Image"] != nil) {
+        NSData* imageData = [[NSUserDefaults standardUserDefaults] objectForKey:@"profile_Image"];        
+        self.profileImageView.image = [UIImage imageWithData:imageData];
     }
     else {
         //self.profileImageView.image = [UIImage imageNamed:@"profile.jpg"];
@@ -152,7 +153,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:self.profileImageView.image forKey:@"image"];
+    [defaults setObject:UIImagePNGRepresentation(self.profileImageView.image) forKey:@"profile_Image"];
     [defaults synchronize];
    
 }
