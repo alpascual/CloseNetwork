@@ -56,7 +56,7 @@
     self.navigationItem.leftBarButtonItem = [Utils getMenuItem];
     self.navigationItem.rightBarButtonItem  = [Utils getSearchButtonItem];
     
-    self.title = @"Settings";
+    self.title = @"Settings 1";
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -64,7 +64,7 @@
     self.tableView.backgroundColor = [UIColor colorWithRed:231.0/255 green:235.0/255 blue:238.0/255 alpha:1.0f];
     self.tableView.separatorColor = [UIColor clearColor];
     
-    self.settingTitles  = [NSArray arrayWithObjects:@"Bluetooth", @"Cloud backup", @"Show Offers", @"Streaming", @"Manage Accounts", nil];
+    self.settingTitles  = [NSArray arrayWithObjects:@"Sharing", @"AirDrop", @"Show Alerts", @"", @"Manage Accounts", nil];
     
     self.settingsElements = [NSArray arrayWithObjects:@"None", @"Switch", @"Segment", @"None", @"None", nil];
     
@@ -72,7 +72,7 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

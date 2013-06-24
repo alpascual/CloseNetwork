@@ -85,7 +85,6 @@
 		ECDA3699175F6F2B00529F64 /* RCSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA3696175F6F2B00529F64 /* RCSwitch.m */; };
 		ECDA369A175F6F2B00529F64 /* RCSwitchOnOff.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA3698175F6F2B00529F64 /* RCSwitchOnOff.m */; };
 		ECDA369D175F702F00529F64 /* FlatTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA369C175F702F00529F64 /* FlatTheme.m */; };
-		ECDA36A0175F8A8600529F64 /* SettingsController2.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA369F175F8A8600529F64 /* SettingsController2.m */; };
 		ECDA36B0175F933800529F64 /* GHRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA36A6175F933800529F64 /* GHRevealViewController.m */; };
 		ECDA36B1175F933800529F64 /* GHSidebarSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA36A8175F933800529F64 /* GHSidebarSearchViewController.m */; };
 		ECDA36B2175F933800529F64 /* searchBarBG.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDA36AB175F933800529F64 /* searchBarBG.png */; };
@@ -220,8 +219,6 @@
 		ECDA3698175F6F2B00529F64 /* RCSwitchOnOff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSwitchOnOff.m; sourceTree = "<group>"; };
 		ECDA369B175F702F00529F64 /* FlatTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlatTheme.h; path = Utils/FlatTheme.h; sourceTree = "<group>"; };
 		ECDA369C175F702F00529F64 /* FlatTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlatTheme.m; path = Utils/FlatTheme.m; sourceTree = "<group>"; };
-		ECDA369E175F8A8500529F64 /* SettingsController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController2.h; sourceTree = "<group>"; };
-		ECDA369F175F8A8600529F64 /* SettingsController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController2.m; sourceTree = "<group>"; };
 		ECDA36A5175F933800529F64 /* GHRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRevealViewController.h; sourceTree = "<group>"; };
 		ECDA36A6175F933800529F64 /* GHRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRevealViewController.m; sourceTree = "<group>"; };
 		ECDA36A7175F933800529F64 /* GHSidebarSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSidebarSearchViewController.h; sourceTree = "<group>"; };
@@ -569,8 +566,6 @@
 			children = (
 				ECDA367D175F639400529F64 /* SettingsController1.h */,
 				ECDA367E175F639400529F64 /* SettingsController1.m */,
-				ECDA369E175F8A8500529F64 /* SettingsController2.h */,
-				ECDA369F175F8A8600529F64 /* SettingsController2.m */,
 			);
 			name = Views;
 			path = SettingsControllers/Views;
@@ -861,7 +856,6 @@
 				ECDA3699175F6F2B00529F64 /* RCSwitch.m in Sources */,
 				ECDA369A175F6F2B00529F64 /* RCSwitchOnOff.m in Sources */,
 				ECDA369D175F702F00529F64 /* FlatTheme.m in Sources */,
-				ECDA36A0175F8A8600529F64 /* SettingsController2.m in Sources */,
 				ECDA36B0175F933800529F64 /* GHRevealViewController.m in Sources */,
 				ECDA36B1175F933800529F64 /* GHSidebarSearchViewController.m in Sources */,
 				ECDA36BC175F93AC00529F64 /* SidebarController1.m in Sources */,

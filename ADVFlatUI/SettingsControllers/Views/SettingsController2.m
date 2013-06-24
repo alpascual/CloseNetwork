@@ -56,7 +56,7 @@
     self.navigationItem.leftBarButtonItem = [Utils getMenuItem];
     self.navigationItem.rightBarButtonItem  = [Utils getSearchButtonItem];
     
-    self.title = @"Settings";
+    self.title = @"Settings 2";
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 568) style:UITableViewStyleGrouped];
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;

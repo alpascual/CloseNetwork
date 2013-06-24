@@ -43,7 +43,7 @@
     self.layout.minimumLineSpacing = 10;
     self.layout.sectionInset = UIEdgeInsetsMake(0, 10, 0, 10);
 
-    UIColor* darkColor = [UIColor colorWithRed:10.0/255 green:78.0/255 blue:108.0/255 alpha:1.0f];
+    UIColor* darkColor = [UIColor colorWithRed:10.0/255 green:78.0/255 blue:108.0/255 alpha:0.8f];
     self.collectionView.backgroundColor = darkColor;
 
     
@@ -54,15 +54,15 @@
     
     ControllerInfo* feed1 = [[ControllerInfo alloc] initWithName:@"Who is around you?" andControllerId:@"FeedController1"];
     
+    ControllerInfo* settings1 = [[ControllerInfo alloc] initWithName:@"Settings" andControllerId:@"SettingsController1"];
+    
     StoryboardInfo* feedStoryboard = [[StoryboardInfo alloc] initWithName:@"" andStoryboardId:@"FeedStoryboard"];
     feedStoryboard.controllers = @[feed1];
-    
-    ControllerInfo* settings1 = [[ControllerInfo alloc] initWithName:@"Settings" andControllerId:@"SettingsController1"];
     
     StoryboardInfo* settingsStoryboard = [[StoryboardInfo alloc] initWithName:@"" andStoryboardId:@"SettingsStoryboard"];
     settingsStoryboard.controllers = @[settings1];//, settings2];
     
-    self.storyboards = @[profileStoryboard, feedStoryboard ,settingsStoryboard];
+    self.storyboards = @[profileStoryboard, feedStoryboard, settingsStoryboard];
     
     self.swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedScreen:)];
     self.swipeGesture.numberOfTouchesRequired = 1;
