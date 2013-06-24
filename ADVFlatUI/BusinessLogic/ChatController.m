@@ -32,7 +32,7 @@
     
     self.title = @"Messages";
     
-    self.messages = [[NSMutableArray alloc] initWithObjects:
+    /*self.messages = [[NSMutableArray alloc] initWithObjects:
                      @"Testing some messages here.",
                      @"This work is based on Sam Soffes' SSMessagesViewController.",
                      @"This is a complete re-write and refactoring.",
@@ -44,7 +44,27 @@
                        [NSDate distantPast],
                        [NSDate distantPast],
                        [NSDate date],
-                       nil];
+                       nil];*/
+    
+    self.messages = [[NSMutableArray alloc] init];
+    self.timestamps = [[NSMutableArray alloc] init];
+    //TODO maybe restore the previous session?
+    
+    
+    self.manager = [[PeerToPeerManager alloc] init];
+    
+    self.delaytimer = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:
+                       @selector(delayManager:) userInfo:nil repeats:NO];
+}
+
+- (void)delayManager:(NSTimer *)timer
+{
+    [timer invalidate];
+    timer = nil;
+    
+    [self.manager showViewController];
+    //self.manager.peer.delegate = self;
+    //[self presentViewController:self.manager.peer animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

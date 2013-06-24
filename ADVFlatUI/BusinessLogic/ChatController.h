@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "JSMessagesViewController.h"
-
+#import "PeerToPeerManager.h"
 
 @interface ChatController : JSMessagesViewController <JSMessagesViewDelegate, JSMessagesViewDataSource>
 
 @property (strong, nonatomic) NSMutableArray *messages;
 @property (strong, nonatomic) NSMutableArray *timestamps;
+
+@property (strong, nonatomic) PeerToPeerManager *manager;
+@property (strong, nonatomic) NSTimer *delaytimer;
 
 @end
