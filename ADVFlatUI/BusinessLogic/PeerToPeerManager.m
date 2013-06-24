@@ -39,7 +39,7 @@
     
     [self.advertiser startAdvertisingPeer];
     
-    self.peer = [[MCPeerPickerViewController alloc] initWithBrowser:self.browser session:self.session];
+    //self.peer = [[MCPeerPickerViewController alloc] initWithBrowser:self.browser session:self.session];
     
 }
 
