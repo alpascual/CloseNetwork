@@ -14,5 +14,6 @@
 @property (nonatomic, weak) IBOutlet UITableView* feedTableView;
 @property (nonatomic, strong) PeerToPeerManager *manager;
 @property (nonatomic, strong) NSTimer *delaytimer;
+@property (nonatomic, strong) NSMutableArray *airDropArray;
 
 @end

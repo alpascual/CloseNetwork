@@ -63,6 +63,10 @@
 - (void)peerPickerViewController:(MCPeerPickerViewController *)picker didConnectPeers:(NSArray *)peerIDs
 {
     NSLog(@"all invited peers %@", peerIDs);
+    //self.airDropArray = peerIDs;
+    // Build the array
+    
+    [self.feedTableView reloadData];
 }
 
 // Notifies delegate that the user cancelled the picker.
