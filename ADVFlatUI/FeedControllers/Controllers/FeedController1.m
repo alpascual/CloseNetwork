@@ -29,6 +29,7 @@
     [super viewDidLoad];
 	
     NSString* boldFontName = @"GillSans-Bold";
+   // self edgesForExtendedLayout ExtendedEdgesForLayout
 
     [self styleNavigationBarWithFontName:boldFontName];
     
