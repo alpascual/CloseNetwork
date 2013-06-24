@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSMessagesViewController.h"
 
-@interface ChatController : UIViewController
+
+@interface ChatController : JSMessagesViewController <JSMessagesViewDelegate, JSMessagesViewDataSource>
+
+@property (strong, nonatomic) NSMutableArray *messages;
+@property (strong, nonatomic) NSMutableArray *timestamps;
 
 @end

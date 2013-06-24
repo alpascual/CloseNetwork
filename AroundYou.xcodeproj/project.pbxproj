@@ -35,6 +35,51 @@
 		8842FF7E1773BFE9005863E4 /* NotificationBackgroundWarningIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF591773BB40005863E4 /* NotificationBackgroundWarningIcon.png */; };
 		8842FF7F1773BFE9005863E4 /* NotificationBackgroundWarningIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF5A1773BB40005863E4 /* NotificationBackgroundWarningIcon@2x.png */; };
 		8842FF801774CD61005863E4 /* design.json in Resources */ = {isa = PBXBuildFile; fileRef = 8842FF4B1773BB40005863E4 /* design.json */; };
+		8848BF7B1778EE0F00062770 /* JSBubbleMessageCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF4C1778E23100062770 /* JSBubbleMessageCell.h */; };
+		8848BF7C1778EE0F00062770 /* JSBubbleMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF4D1778E23100062770 /* JSBubbleMessageCell.m */; };
+		8848BF7D1778EE0F00062770 /* JSBubbleView.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF4E1778E23100062770 /* JSBubbleView.h */; };
+		8848BF7E1778EE0F00062770 /* JSBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF4F1778E23100062770 /* JSBubbleView.m */; };
+		8848BF7F1778EE0F00062770 /* JSMessageInputView.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF501778E23100062770 /* JSMessageInputView.h */; };
+		8848BF801778EE0F00062770 /* JSMessageInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF511778E23100062770 /* JSMessageInputView.m */; };
+		8848BF811778EE0F00062770 /* JSMessageSoundEffect.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF521778E23100062770 /* JSMessageSoundEffect.h */; };
+		8848BF821778EE0F00062770 /* JSMessageSoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF531778E23100062770 /* JSMessageSoundEffect.m */; };
+		8848BF831778EE0F00062770 /* JSMessagesViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF541778E23100062770 /* JSMessagesViewController.h */; };
+		8848BF841778EE0F00062770 /* JSMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF551778E23100062770 /* JSMessagesViewController.m */; };
+		8848BF851778EE0F00062770 /* NSString+JSMessagesView.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF561778E23100062770 /* NSString+JSMessagesView.h */; };
+		8848BF861778EE0F00062770 /* NSString+JSMessagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF571778E23100062770 /* NSString+JSMessagesView.m */; };
+		8848BF881778EE4F00062770 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8848BF871778EE4F00062770 /* AudioToolbox.framework */; };
+		8848BF891778EE8800062770 /* bubbleSquareIncoming.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF5A1778E23100062770 /* bubbleSquareIncoming.png */; };
+		8848BF8A1778EE8800062770 /* bubbleSquareIncoming@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF5B1778E23100062770 /* bubbleSquareIncoming@2x.png */; };
+		8848BF8B1778EE8800062770 /* bubbleSquareOutgoing.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF5C1778E23100062770 /* bubbleSquareOutgoing.png */; };
+		8848BF8C1778EE8800062770 /* bubbleSquareOutgoing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF5D1778E23100062770 /* bubbleSquareOutgoing@2x.png */; };
+		8848BF8D1778EE8800062770 /* input-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF5E1778E23100062770 /* input-bar.png */; };
+		8848BF8E1778EE8800062770 /* input-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF5F1778E23100062770 /* input-bar@2x.png */; };
+		8848BF8F1778EE8800062770 /* input-field.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF601778E23100062770 /* input-field.png */; };
+		8848BF901778EE8800062770 /* input-field@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF611778E23100062770 /* input-field@2x.png */; };
+		8848BF911778EE8800062770 /* messageBubbleBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF621778E23100062770 /* messageBubbleBlue.png */; };
+		8848BF921778EE8800062770 /* messageBubbleBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF631778E23100062770 /* messageBubbleBlue@2x.png */; };
+		8848BF931778EE8800062770 /* messageBubbleGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF641778E23100062770 /* messageBubbleGray.png */; };
+		8848BF941778EE8800062770 /* messageBubbleGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF651778E23100062770 /* messageBubbleGray@2x.png */; };
+		8848BF951778EE8800062770 /* messageBubbleGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF661778E23100062770 /* messageBubbleGreen.png */; };
+		8848BF961778EE8800062770 /* messageBubbleGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF671778E23100062770 /* messageBubbleGreen@2x.png */; };
+		8848BF971778EE8800062770 /* messageBubbleHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF681778E23100062770 /* messageBubbleHighlighted.png */; };
+		8848BF981778EE8800062770 /* messageBubbleHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF691778E23100062770 /* messageBubbleHighlighted@2x.png */; };
+		8848BF991778EE8800062770 /* messageBubbleTyping.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF6A1778E23100062770 /* messageBubbleTyping.png */; };
+		8848BF9A1778EE8800062770 /* messageBubbleTyping@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF6B1778E23100062770 /* messageBubbleTyping@2x.png */; };
+		8848BF9B1778EE8800062770 /* send-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF6C1778E23100062770 /* send-highlighted.png */; };
+		8848BF9C1778EE8800062770 /* send-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF6D1778E23100062770 /* send-highlighted@2x.png */; };
+		8848BF9D1778EE8800062770 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF6E1778E23100062770 /* send.png */; };
+		8848BF9E1778EE8800062770 /* send@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF6F1778E23100062770 /* send@2x.png */; };
+		8848BF9F1778EE9300062770 /* messageReceived.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF711778E23100062770 /* messageReceived.aiff */; };
+		8848BFA01778EE9300062770 /* messageSent.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8848BF721778E23100062770 /* messageSent.aiff */; };
+		8848BFA11778EED900062770 /* ChatController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF791778EBC400062770 /* ChatController.h */; };
+		8848BFA21778EED900062770 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF7A1778EBC400062770 /* ChatController.m */; };
+		8848BFA31778EFA200062770 /* UIButton+JSMessagesView.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF731778E23100062770 /* UIButton+JSMessagesView.h */; };
+		8848BFA41778EFA200062770 /* UIButton+JSMessagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF741778E23100062770 /* UIButton+JSMessagesView.m */; };
+		8848BFA51778EFA200062770 /* UIColor+JSMessagesView.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF751778E23100062770 /* UIColor+JSMessagesView.h */; };
+		8848BFA61778EFA200062770 /* UIColor+JSMessagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF761778E23100062770 /* UIColor+JSMessagesView.m */; };
+		8848BFA71778EFA200062770 /* UIView+AnimationOptionsForCurve.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF771778E23100062770 /* UIView+AnimationOptionsForCurve.h */; };
+		8848BFA81778EFA200062770 /* UIView+AnimationOptionsForCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF781778E23100062770 /* UIView+AnimationOptionsForCurve.m */; };
 		EC0831AB175788FD00EDE244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AA175788FD00EDE244 /* UIKit.framework */; };
 		EC0831AD175788FD00EDE244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AC175788FD00EDE244 /* Foundation.framework */; };
 		EC0831AF175788FD00EDE244 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AE175788FD00EDE244 /* CoreGraphics.framework */; };
@@ -194,6 +239,7 @@
 		8848BF781778E23100062770 /* UIView+AnimationOptionsForCurve.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationOptionsForCurve.m"; sourceTree = "<group>"; };
 		8848BF791778EBC400062770 /* ChatController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
 		8848BF7A1778EBC400062770 /* ChatController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
+		8848BF871778EE4F00062770 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		EC0831A7175788FD00EDE244 /* AroundYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0831AA175788FD00EDE244 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC0831AC175788FD00EDE244 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -316,6 +362,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8848BF881778EE4F00062770 /* AudioToolbox.framework in Frameworks */,
 				76A10DC31771517B00A9B62F /* MultipeerConnectivity.framework in Frameworks */,
 				EC0831CE17578BC300EDE244 /* QuartzCore.framework in Frameworks */,
 				EC0831AB175788FD00EDE244 /* UIKit.framework in Frameworks */,
@@ -504,6 +551,7 @@
 		EC0831A9175788FD00EDE244 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8848BF871778EE4F00062770 /* AudioToolbox.framework */,
 				76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */,
 				EC0831CD17578BC300EDE244 /* QuartzCore.framework */,
 				EC0831AA175788FD00EDE244 /* UIKit.framework */,
@@ -872,6 +920,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8848BF9F1778EE9300062770 /* messageReceived.aiff in Resources */,
+				8848BFA01778EE9300062770 /* messageSent.aiff in Resources */,
+				8848BF891778EE8800062770 /* bubbleSquareIncoming.png in Resources */,
+				8848BF8A1778EE8800062770 /* bubbleSquareIncoming@2x.png in Resources */,
+				8848BF8B1778EE8800062770 /* bubbleSquareOutgoing.png in Resources */,
+				8848BF8C1778EE8800062770 /* bubbleSquareOutgoing@2x.png in Resources */,
+				8848BF8D1778EE8800062770 /* input-bar.png in Resources */,
+				8848BF8E1778EE8800062770 /* input-bar@2x.png in Resources */,
+				8848BF8F1778EE8800062770 /* input-field.png in Resources */,
+				8848BF901778EE8800062770 /* input-field@2x.png in Resources */,
+				8848BF911778EE8800062770 /* messageBubbleBlue.png in Resources */,
+				8848BF921778EE8800062770 /* messageBubbleBlue@2x.png in Resources */,
+				8848BF931778EE8800062770 /* messageBubbleGray.png in Resources */,
+				8848BF941778EE8800062770 /* messageBubbleGray@2x.png in Resources */,
+				8848BF951778EE8800062770 /* messageBubbleGreen.png in Resources */,
+				8848BF961778EE8800062770 /* messageBubbleGreen@2x.png in Resources */,
+				8848BF971778EE8800062770 /* messageBubbleHighlighted.png in Resources */,
+				8848BF981778EE8800062770 /* messageBubbleHighlighted@2x.png in Resources */,
+				8848BF991778EE8800062770 /* messageBubbleTyping.png in Resources */,
+				8848BF9A1778EE8800062770 /* messageBubbleTyping@2x.png in Resources */,
+				8848BF9B1778EE8800062770 /* send-highlighted.png in Resources */,
+				8848BF9C1778EE8800062770 /* send-highlighted@2x.png in Resources */,
+				8848BF9D1778EE8800062770 /* send.png in Resources */,
+				8848BF9E1778EE8800062770 /* send@2x.png in Resources */,
 				8842FF801774CD61005863E4 /* design.json in Resources */,
 				8842FF721773BFE9005863E4 /* NotificationBackgroundError.png in Resources */,
 				8842FF731773BFE9005863E4 /* NotificationBackgroundError@2x.png in Resources */,
@@ -945,6 +1017,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8848BFA31778EFA200062770 /* UIButton+JSMessagesView.h in Sources */,
+				8848BFA41778EFA200062770 /* UIButton+JSMessagesView.m in Sources */,
+				8848BFA51778EFA200062770 /* UIColor+JSMessagesView.h in Sources */,
+				8848BFA61778EFA200062770 /* UIColor+JSMessagesView.m in Sources */,
+				8848BFA71778EFA200062770 /* UIView+AnimationOptionsForCurve.h in Sources */,
+				8848BFA81778EFA200062770 /* UIView+AnimationOptionsForCurve.m in Sources */,
+				8848BFA11778EED900062770 /* ChatController.h in Sources */,
+				8848BFA21778EED900062770 /* ChatController.m in Sources */,
+				8848BF7B1778EE0F00062770 /* JSBubbleMessageCell.h in Sources */,
+				8848BF7C1778EE0F00062770 /* JSBubbleMessageCell.m in Sources */,
+				8848BF7D1778EE0F00062770 /* JSBubbleView.h in Sources */,
+				8848BF7E1778EE0F00062770 /* JSBubbleView.m in Sources */,
+				8848BF7F1778EE0F00062770 /* JSMessageInputView.h in Sources */,
+				8848BF801778EE0F00062770 /* JSMessageInputView.m in Sources */,
+				8848BF811778EE0F00062770 /* JSMessageSoundEffect.h in Sources */,
+				8848BF821778EE0F00062770 /* JSMessageSoundEffect.m in Sources */,
+				8848BF831778EE0F00062770 /* JSMessagesViewController.h in Sources */,
+				8848BF841778EE0F00062770 /* JSMessagesViewController.m in Sources */,
+				8848BF851778EE0F00062770 /* NSString+JSMessagesView.h in Sources */,
+				8848BF861778EE0F00062770 /* NSString+JSMessagesView.m in Sources */,
 				8842FF621773BCFF005863E4 /* TSMessageView.h in Sources */,
 				8842FF631773BCFF005863E4 /* TSMessageView.m in Sources */,
 				8842FF5E1773BCE1005863E4 /* TSMessage.h in Sources */,
