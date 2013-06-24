@@ -48,16 +48,24 @@
 
 #pragma mark - MCSessionDelegate
 
+// Start receiving a resource from remote peer
+- (void)session:(MCSession *)session didStartReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID withProgress:(NSProgress *)progress
+{
+    NSLog(@"MCSessionDelegate :: didStartReceivingResourceWithName :: Received Resource %@ from %@",resourceName,peerID);
+}
+
+// Finished receiving a resource from remote peer and saved the content in a temporary location - the app is responsible for moving the file to a permanent location within its sandbox
+- (void)session:(MCSession *)session didFinishReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID atURL:(NSURL *)localURL withError:(NSError *)error
+{
+    NSLog(@"MCSessionDelegate :: didFinishReceivingResourceWithName :: Received Resource %@ from %@ with URL %@",resourceName,peerID, localURL);
+}
 
 
 - (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID {
     
     NSLog(@"MCSessionDelegate :: didReceiveData :: Received %@ from %@",[data description],peerID);
     
-    NSString * message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    
-    
-    
+    NSString * message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];    
     UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Received Message" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     
     [alert show];

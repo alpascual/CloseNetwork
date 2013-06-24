@@ -192,6 +192,8 @@
 		8848BF761778E23100062770 /* UIColor+JSMessagesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JSMessagesView.m"; sourceTree = "<group>"; };
 		8848BF771778E23100062770 /* UIView+AnimationOptionsForCurve.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationOptionsForCurve.h"; sourceTree = "<group>"; };
 		8848BF781778E23100062770 /* UIView+AnimationOptionsForCurve.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationOptionsForCurve.m"; sourceTree = "<group>"; };
+		8848BF791778EBC400062770 /* ChatController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
+		8848BF7A1778EBC400062770 /* ChatController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
 		EC0831A7175788FD00EDE244 /* AroundYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0831AA175788FD00EDE244 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC0831AC175788FD00EDE244 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -333,6 +335,8 @@
 				76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */,
 				8842FF3B17738448005863E4 /* EditProfileViewController.h */,
 				8842FF3C17738448005863E4 /* EditProfileViewController.m */,
+				8848BF791778EBC400062770 /* ChatController.h */,
+				8848BF7A1778EBC400062770 /* ChatController.m */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";

@@ -53,11 +53,12 @@
     profileStoryboard.controllers = @[profile3];
     
     ControllerInfo* feed1 = [[ControllerInfo alloc] initWithName:@"Who is around you?" andControllerId:@"FeedController1"];
+    ControllerInfo *chat1 = [[ControllerInfo alloc] initWithName:@"Chat around" andControllerId:@"ChatController"];
     
     ControllerInfo* settings1 = [[ControllerInfo alloc] initWithName:@"Settings" andControllerId:@"SettingsController1"];
     
     StoryboardInfo* feedStoryboard = [[StoryboardInfo alloc] initWithName:@"" andStoryboardId:@"FeedStoryboard"];
-    feedStoryboard.controllers = @[feed1];
+    feedStoryboard.controllers = @[feed1,chat1];
     
     StoryboardInfo* settingsStoryboard = [[StoryboardInfo alloc] initWithName:@"" andStoryboardId:@"SettingsStoryboard"];
     settingsStoryboard.controllers = @[settings1];//, settings2];
