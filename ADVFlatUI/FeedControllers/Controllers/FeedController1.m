@@ -55,8 +55,26 @@
     timer = nil;
     
     [self.manager showViewController];
-    //self.manager.peer.delegate = self;
-    //[self presentViewController:self.manager.peer animated:YES completion:nil];
+    self.manager.peerBrowser.delegate = self;
+    [self presentViewController:self.manager.peerBrowser animated:YES completion:nil];
+}
+
+// Notifies the delegate, when the user taps the done button
+- (void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController
+{
+    
+}
+
+// Notifies delegate that the user taps the cancel button.
+- (void)browserViewControllerWasCancelled:(MCBrowserViewController *)browserViewController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (BOOL)browserViewController:(MCBrowserViewController *)browserViewController shouldPresentNearbyPeer:(MCPeerID *)peerID withDiscoveryInfo:(NSDictionary *)info
+{
+     NSLog(@"all invited peer %@ with info %@", peerID, info);
+    return YES;
 }
 
 // Picker controller delegate

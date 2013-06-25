@@ -16,7 +16,8 @@
 @property (strong, nonatomic) MCPeerID * myPeerId;
 @property (strong, nonatomic) MCNearbyServiceBrowser *browser;
 @property (strong, nonatomic) MCNearbyServiceAdvertiser * advertiser;
+@property (strong, nonatomic) MCBrowserViewController *peerBrowser;
 
-- (void) showViewController;
+- (MCBrowserViewController*) showViewController;
 
 @end

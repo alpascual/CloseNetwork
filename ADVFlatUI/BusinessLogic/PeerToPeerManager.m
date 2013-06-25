@@ -11,7 +11,7 @@
 @implementation PeerToPeerManager
 
 
-- (void) showViewController
+- (MCBrowserViewController*) showViewController
 {
     //self.peer = [[MCPeerPickerViewController alloc] init];
     
@@ -41,7 +41,10 @@
     
     
     //self.peer = [[MCPeerPickerViewController alloc] initWithBrowser:self.browser session:self.session];
+    self.peerBrowser = [[MCBrowserViewController alloc] initWithBrowser:self.browser session:self.session];
     
+    return self.peerBrowser;
+      
 }
 
 
@@ -66,6 +69,7 @@
     
     NSLog(@"MCSessionDelegate :: didReceiveData :: Received %@ from %@",[data description],peerID);
     
+    //ACTION: Message received here
     NSString * message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];    
     UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Received Message" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     
@@ -97,6 +101,7 @@
         
         NSError *error;
         
+        // ACTION: Send messages here as broadcast!!!
         [self.session sendData:[@"HELLO" dataUsingEncoding:NSUTF8StringEncoding] toPeers:[NSArray arrayWithObject:peerID] withMode:MCSessionSendDataReliable error:&error];
         
     }

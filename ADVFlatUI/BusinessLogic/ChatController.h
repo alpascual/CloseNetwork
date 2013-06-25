@@ -10,7 +10,7 @@
 #import "JSMessagesViewController.h"
 #import "PeerToPeerManager.h"
 
-@interface ChatController : JSMessagesViewController <JSMessagesViewDelegate, JSMessagesViewDataSource>
+@interface ChatController : JSMessagesViewController <JSMessagesViewDelegate, JSMessagesViewDataSource,MCBrowserViewControllerDelegate>
 
 @property (strong, nonatomic) NSMutableArray *messages;
 @property (strong, nonatomic) NSMutableArray *timestamps;
