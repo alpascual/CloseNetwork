@@ -70,6 +70,7 @@
     NSLog(@"MCSessionDelegate :: didReceiveData :: Received %@ from %@",[data description],peerID);
     
     //ACTION: Message received here
+    // TODO: Create a delegate to receive messages
     NSString * message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];    
     UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Received Message" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     
@@ -102,6 +103,7 @@
         NSError *error;
         
         // ACTION: Send messages here as broadcast!!!
+        // TODO:  create a method to send messages
         [self.session sendData:[@"HELLO" dataUsingEncoding:NSUTF8StringEncoding] toPeers:[NSArray arrayWithObject:peerID] withMode:MCSessionSendDataReliable error:&error];
         
     }

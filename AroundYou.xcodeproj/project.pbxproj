@@ -80,6 +80,13 @@
 		8848BFA61778EFA200062770 /* UIColor+JSMessagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF761778E23100062770 /* UIColor+JSMessagesView.m */; };
 		8848BFA71778EFA200062770 /* UIView+AnimationOptionsForCurve.h in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF771778E23100062770 /* UIView+AnimationOptionsForCurve.h */; };
 		8848BFA81778EFA200062770 /* UIView+AnimationOptionsForCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848BF781778E23100062770 /* UIView+AnimationOptionsForCurve.m */; };
+		88749539177A2D9500A8D36B /* DatabaseUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 88749535177A2C2C00A8D36B /* DatabaseUtils.h */; };
+		8874953A177A2D9500A8D36B /* DatabaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88749536177A2C2C00A8D36B /* DatabaseUtils.m */; };
+		8874953B177A2D9500A8D36B /* Profiles.h in Sources */ = {isa = PBXBuildFile; fileRef = 88749531177A250800A8D36B /* Profiles.h */; };
+		8874953C177A2D9500A8D36B /* Profiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 88749532177A250800A8D36B /* Profiles.m */; };
+		8874953D177A2D9500A8D36B /* Messages.h in Sources */ = {isa = PBXBuildFile; fileRef = 88749533177A252B00A8D36B /* Messages.h */; };
+		8874953E177A2D9500A8D36B /* Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 88749534177A252B00A8D36B /* Messages.m */; };
+		88749540177A2DEF00A8D36B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8874953F177A2DEF00A8D36B /* CoreData.framework */; };
 		EC0831AB175788FD00EDE244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AA175788FD00EDE244 /* UIKit.framework */; };
 		EC0831AD175788FD00EDE244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AC175788FD00EDE244 /* Foundation.framework */; };
 		EC0831AF175788FD00EDE244 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AE175788FD00EDE244 /* CoreGraphics.framework */; };
@@ -240,6 +247,14 @@
 		8848BF791778EBC400062770 /* ChatController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
 		8848BF7A1778EBC400062770 /* ChatController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
 		8848BF871778EE4F00062770 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		88749530177A23A100A8D36B /* around.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = around.xcdatamodel; sourceTree = "<group>"; };
+		88749531177A250800A8D36B /* Profiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Profiles.h; sourceTree = "<group>"; };
+		88749532177A250800A8D36B /* Profiles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Profiles.m; sourceTree = "<group>"; };
+		88749533177A252B00A8D36B /* Messages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Messages.h; sourceTree = "<group>"; };
+		88749534177A252B00A8D36B /* Messages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Messages.m; sourceTree = "<group>"; };
+		88749535177A2C2C00A8D36B /* DatabaseUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseUtils.h; sourceTree = "<group>"; };
+		88749536177A2C2C00A8D36B /* DatabaseUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseUtils.m; sourceTree = "<group>"; };
+		8874953F177A2DEF00A8D36B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EC0831A7175788FD00EDE244 /* AroundYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0831AA175788FD00EDE244 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC0831AC175788FD00EDE244 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -362,6 +377,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88749540177A2DEF00A8D36B /* CoreData.framework in Frameworks */,
 				8848BF881778EE4F00062770 /* AudioToolbox.framework in Frameworks */,
 				76A10DC31771517B00A9B62F /* MultipeerConnectivity.framework in Frameworks */,
 				EC0831CE17578BC300EDE244 /* QuartzCore.framework in Frameworks */,
@@ -377,6 +393,7 @@
 		76A10DBF177150D800A9B62F /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				8874952E177A238600A8D36B /* Database */,
 				8842FF3F1773BB3F005863E4 /* TSMessage */,
 				76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */,
 				76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */,
@@ -531,6 +548,20 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		8874952E177A238600A8D36B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				88749535177A2C2C00A8D36B /* DatabaseUtils.h */,
+				88749536177A2C2C00A8D36B /* DatabaseUtils.m */,
+				8874952F177A23A100A8D36B /* around.xcdatamodeld */,
+				88749531177A250800A8D36B /* Profiles.h */,
+				88749532177A250800A8D36B /* Profiles.m */,
+				88749533177A252B00A8D36B /* Messages.h */,
+				88749534177A252B00A8D36B /* Messages.m */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		EC08319E175788FD00EDE244 = {
 			isa = PBXGroup;
 			children = (
@@ -551,6 +582,7 @@
 		EC0831A9175788FD00EDE244 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8874953F177A2DEF00A8D36B /* CoreData.framework */,
 				8848BF871778EE4F00062770 /* AudioToolbox.framework */,
 				76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */,
 				EC0831CD17578BC300EDE244 /* QuartzCore.framework */,
@@ -1017,6 +1049,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88749539177A2D9500A8D36B /* DatabaseUtils.h in Sources */,
+				8874953A177A2D9500A8D36B /* DatabaseUtils.m in Sources */,
+				8874953B177A2D9500A8D36B /* Profiles.h in Sources */,
+				8874953C177A2D9500A8D36B /* Profiles.m in Sources */,
+				8874953D177A2D9500A8D36B /* Messages.h in Sources */,
+				8874953E177A2D9500A8D36B /* Messages.m in Sources */,
 				8848BFA31778EFA200062770 /* UIButton+JSMessagesView.h in Sources */,
 				8848BFA41778EFA200062770 /* UIButton+JSMessagesView.m in Sources */,
 				8848BFA51778EFA200062770 /* UIColor+JSMessagesView.h in Sources */,
@@ -1202,6 +1240,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8874952F177A23A100A8D36B /* around.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				88749530177A23A100A8D36B /* around.xcdatamodel */,
+			);
+			currentVersion = 88749530177A23A100A8D36B /* around.xcdatamodel */;
+			path = around.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EC08319F175788FD00EDE244 /* Project object */;
 }
