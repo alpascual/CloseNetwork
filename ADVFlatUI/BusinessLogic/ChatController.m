@@ -32,6 +32,18 @@
     
     self.title = @"Messages";
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ( [defaults objectForKey:@"name"] != nil )
+        self.myUsername = [defaults objectForKey:@"name"];
+    else
+    {
+        [TSMessage showNotificationInViewController:self
+                                          withTitle:@"Profile missing"
+                                        withMessage:@"Set your profile before using messages."
+                                           withType:TSMessageNotificationTypeError];
+        return;
+    }
+    
     /*self.messages = [[NSMutableArray alloc] initWithObjects:
                      @"Testing some messages here.",
                      @"This work is based on Sam Soffes' SSMessagesViewController.",
@@ -46,10 +58,18 @@
                        [NSDate date],
                        nil];*/
     
-    self.messages = [[NSMutableArray alloc] init];
+    /*self.messages = [[NSMutableArray alloc] init];
     self.timestamps = [[NSMutableArray alloc] init];
+    self.usernames = [[NSMutableArray alloc] init];*/
     //TODO maybe restore the previous session?
     
+    DatabaseUtils *utils = [[DatabaseUtils alloc] init];
+    self.allMessages = [utils getAllMessages];
+    /*for (Messages *message in self.allMessages) {
+        [self.messages addObject:message.msg];
+        [self.timestamps addObject:message.timestamp];
+        [self.usernames addObject:message.username];
+    }*/
     
     self.manager = [[PeerToPeerManager alloc] init];
     
@@ -76,32 +96,46 @@
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.messages.count;
+    //return self.messages.count;
+    return self.allMessages.count;
 }
 
 #pragma mark - Messages view delegate
 - (void)sendPressed:(UIButton *)sender withText:(NSString *)text
 {
-    [self.messages addObject:text];
+    DatabaseUtils *utils = [[DatabaseUtils alloc] init];
+    [utils addMessages:self.myUsername msg:text];
     
-    [self.timestamps addObject:[NSDate date]];
     
-    if((self.messages.count - 1) % 2)
+    //ACTION: Send this message if connected
+    
+    
+    //[self.messages addObject:text];
+    
+    //[self.timestamps addObject:[NSDate date]];
+    
+    //if((self.messages.count - 1) % 2)
         [JSMessageSoundEffect playMessageSentSound];
-    else
-        [JSMessageSoundEffect playMessageReceivedSound];
+    /*else
+        [JSMessageSoundEffect playMessageReceivedSound];*/
     
     [self finishSend];
 }
 
 - (JSBubbleMessageStyle)messageStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return (indexPath.row % 2) ? JSBubbleMessageStyleIncomingDefault : JSBubbleMessageStyleOutgoingDefault;
+    Messages * message = [self.allMessages objectAtIndex:indexPath.row];
+    if ( [message.username isEqualToString:self.myUsername])
+        return JSBubbleMessageStyleIncomingDefault;
+    
+    return JSBubbleMessageStyleOutgoingDefault;
+    // TODO, check who send it and send the correct flag
+    //return (indexPath.row % 2) ? JSBubbleMessageStyleIncomingDefault : JSBubbleMessageStyleOutgoingDefault;
 }
 
 - (JSMessagesViewTimestampPolicy)timestampPolicyForMessagesView
 {
-    return JSMessagesViewTimestampPolicyEveryThree;
+    return JSMessagesViewTimestampPolicyAll;
 }
 
 - (BOOL)hasTimestampForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -113,12 +147,18 @@
 #pragma mark - Messages view data source
 - (NSString *)textForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self.messages objectAtIndex:indexPath.row];
+    Messages * message = [self.allMessages objectAtIndex:indexPath.row];
+    
+    NSString *field = [[NSString alloc] initWithFormat:@"%@ : %@", message.username, message.msg];
+    return field;
+    
+    //return message.msg;
 }
 
 - (NSDate *)timestampForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self.timestamps objectAtIndex:indexPath.row];
+    Messages * message = [self.allMessages objectAtIndex:indexPath.row];    
+    return message.timestamp;
 }
 
 // Notifies the delegate, when the user taps the done button

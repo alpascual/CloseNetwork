@@ -187,6 +187,7 @@
     [cell setMessage:[self.dataSource textForRowAtIndexPath:indexPath]];
     [cell setBackgroundColor:tableView.backgroundColor];
     
+    
     return cell;
 }
 

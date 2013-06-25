@@ -96,8 +96,6 @@
     
     NSLog(@"MCSessionDelegate :: didChangeState :: PeerId %@ changed to state %d",peerID,state);
     
-    
-    
     if (state == MCSessionStateConnected && self.session) {
         
         NSError *error;
@@ -110,6 +108,20 @@
     
 }
 
+-(BOOL) sendTextOnly:(NSString *)textToSend
+{
+    if ( self.session ) {
+        if ( self.session.connectedPeers.count > 0 )
+        {
+            NSError *error;
+            [self.session sendData:[textToSend dataUsingEncoding:NSUTF8StringEncoding] toPeers:self.session.connectedPeers withMode:MCSessionSendDataReliable error:&error];
+            
+            return YES;
+        }
+    }
+    
+    return NO;
+}
 
 
 - (BOOL)session:(MCSession *)session shouldAcceptCertificate:(SecCertificateRef)peerCert forPeer:(MCPeerID *)peerID {

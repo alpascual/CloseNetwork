@@ -20,4 +20,6 @@
 
 - (MCBrowserViewController*) showViewController;
 
+-(BOOL) sendTextOnly:(NSString *)textToSend;
+
 @end

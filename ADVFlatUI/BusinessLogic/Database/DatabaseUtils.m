@@ -217,6 +217,45 @@
     return fetchedObjects;
 }
 
+- (void) addMessages:(NSString*)username msg:(NSString*)message
+{
+    NSDate *currDate = [NSDate date];
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+//    [dateFormatter setDateFormat:@"dd.MM.YY HH:mm:ss"];
+//    NSString *dateString = [dateFormatter stringFromDate:currDate];
+//    NSLog(@"%@",dateString);
+    
+    Messages *msg = [NSEntityDescription
+                           insertNewObjectForEntityForName:@"Messages"
+                           inManagedObjectContext:self.managedObjectContext];
+    
+    [msg setUsername:username];
+    [msg setTimestamp:currDate];
+    [msg setMsg:message];
+    
+    NSError *error;
+    if (![self.managedObjectContext save:&error])
+        NSLog(@"Whoops, couldn't save : %@", [error localizedDescription]);
+}
+
+- (void) addProfile:(NSString*)username withTwitter:(NSString*)twitter andPhone:(NSString*)phone emailAddress:(NSString*)email image:(NSData*)picture
+{
+    Profiles *pro = [NSEntityDescription
+                     insertNewObjectForEntityForName:@"Profiles"
+                     inManagedObjectContext:self.managedObjectContext];
+    
+    [pro setTwitter:twitter];
+    [pro setName:username];
+    [pro setPhone:phone];
+    [pro setEmail:email];
+    [pro setPicture:picture];
+    
+    
+    NSError *error;
+    if (![self.managedObjectContext save:&error])
+        NSLog(@"Whoops, couldn't save : %@", [error localizedDescription]);
+}
+
 /*
 - (NSArray *) getAllFollowers {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
