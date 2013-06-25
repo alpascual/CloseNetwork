@@ -102,11 +102,31 @@
 
 #pragma mark - Messages view delegate
 - (void)sendPressed:(UIButton *)sender withText:(NSString *)text
-{
-    DatabaseUtils *utils = [[DatabaseUtils alloc] init];
-    [utils addMessages:self.myUsername msg:text];
+{    
+    NSString *toSend = [[NSString alloc] initWithFormat:@"!%@,%@", self.myUsername, text];
     
+    BOOL bReturn = [self.manager sendTextOnly:toSend];
     
+    if ( bReturn == YES) {
+        [TSMessage showNotificationInViewController:self
+                                          withTitle:@"Message Sent"
+                                        withMessage:@"Message was sent to the connected people."
+                                           withType:TSMessageNotificationTypeSuccess];
+        
+        [JSMessageSoundEffect playMessageSentSound];
+        
+        DatabaseUtils *utils = [[DatabaseUtils alloc] init];
+        [utils addMessages:self.myUsername msg:text];        
+        self.allMessages = [utils getAllMessages];
+        
+        [self finishSend];
+    }
+    else
+        [TSMessage showNotificationInViewController:self
+                                          withTitle:@"Message Failed"
+                                        withMessage:@"Message failed to be sent."
+                                           withType:TSMessageNotificationTypeError];
+        
     //ACTION: Send this message if connected
     
     
@@ -115,11 +135,11 @@
     //[self.timestamps addObject:[NSDate date]];
     
     //if((self.messages.count - 1) % 2)
-        [JSMessageSoundEffect playMessageSentSound];
+        
     /*else
         [JSMessageSoundEffect playMessageReceivedSound];*/
     
-    [self finishSend];
+    
 }
 
 - (JSBubbleMessageStyle)messageStyleForRowAtIndexPath:(NSIndexPath *)indexPath

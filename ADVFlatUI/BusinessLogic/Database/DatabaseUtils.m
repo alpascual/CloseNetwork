@@ -198,6 +198,7 @@
 
 - (NSArray *) getAllMessages
 {
+    //return nil;
     return [self getAnything:@"Messages"];
 }
 

@@ -71,10 +71,23 @@
     
     //ACTION: Message received here
     // TODO: Create a delegate to receive messages
-    NSString * message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];    
-    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Received Message" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    NSString * message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     
-    [alert show];
+    if ( message.length > 0 ) {
+        if ( [message characterAtIndex:0] == '!' ) {
+            NSLog(@"%@", message);
+        }
+        else if ( [message characterAtIndex:0] == '@') {
+            NSLog(@"%@", message);
+        }
+        else
+        {
+            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Received Message" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            
+            [alert show];
+            
+        }
+    }
     
 }
 
@@ -111,7 +124,7 @@
 -(BOOL) sendTextOnly:(NSString *)textToSend
 {
     if ( self.session ) {
-        if ( self.session.connectedPeers.count > 0 )
+        //if ( self.session.connectedPeers.count > 0 )
         {
             NSError *error;
             [self.session sendData:[textToSend dataUsingEncoding:NSUTF8StringEncoding] toPeers:self.session.connectedPeers withMode:MCSessionSendDataReliable error:&error];

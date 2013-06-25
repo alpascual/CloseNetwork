@@ -87,6 +87,7 @@
 		8874953D177A2D9500A8D36B /* Messages.h in Sources */ = {isa = PBXBuildFile; fileRef = 88749533177A252B00A8D36B /* Messages.h */; };
 		8874953E177A2D9500A8D36B /* Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 88749534177A252B00A8D36B /* Messages.m */; };
 		88749540177A2DEF00A8D36B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8874953F177A2DEF00A8D36B /* CoreData.framework */; };
+		88E182FD177A57E500FB5A6F /* around.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 8874952F177A23A100A8D36B /* around.xcdatamodeld */; };
 		EC0831AB175788FD00EDE244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AA175788FD00EDE244 /* UIKit.framework */; };
 		EC0831AD175788FD00EDE244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AC175788FD00EDE244 /* Foundation.framework */; };
 		EC0831AF175788FD00EDE244 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0831AE175788FD00EDE244 /* CoreGraphics.framework */; };
@@ -952,6 +953,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E182FD177A57E500FB5A6F /* around.xcdatamodeld in Resources */,
 				8848BF9F1778EE9300062770 /* messageReceived.aiff in Resources */,
 				8848BFA01778EE9300062770 /* messageSent.aiff in Resources */,
 				8848BF891778EE8800062770 /* bubbleSquareIncoming.png in Resources */,

@@ -15,7 +15,7 @@
         <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Profiles" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Messages" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Messages" positionX="322" positionY="192" width="128" height="103"/>
+        <element name="Profiles" positionX="160" positionY="192" width="128" height="133"/>
     </elements>
 </model>
