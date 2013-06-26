@@ -13,5 +13,6 @@
 @optional
 
 - (void) chatArrived:(NSString*) rawMessage;
+- (void) profileArrived:(NSString*) rawMessage;
 
 @end

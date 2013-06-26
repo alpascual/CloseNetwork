@@ -26,6 +26,7 @@
 - (NSArray *) getAnything:(NSString*)entityForName;
 
 - (void) addMessages:(NSString*)username msg:(NSString*)message;
+- (NSMutableArray *) getProfileByName:(NSString *) username;
 - (void) addProfile:(NSString*)username withTwitter:(NSString*)twitter andPhone:(NSString*)phone emailAddress:(NSString*)email image:(NSData*)picture;
 
 @end

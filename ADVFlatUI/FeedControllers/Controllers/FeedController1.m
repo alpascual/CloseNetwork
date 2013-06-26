@@ -36,6 +36,7 @@
     self.title = @"Around you";
     
     self.manager = [[PeerToPeerManager alloc] init];
+    self.manager.aroundDelegate = self;
     
     self.delaytimer = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:
                        @selector(delayManager:) userInfo:nil repeats:NO];
@@ -178,6 +179,26 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) profileArrived:(NSString*) rawMessage
+{
+     //NSString *profileToSend = [[NSString alloc] initWithFormat:@"@%@,%@,%@,%@,%@", [defaults objectForKey:@"name"], [defaults objectForKey:@"email"], [defaults objectForKey:@"phone"], [defaults objectForKey:@"twitter"], [defaults objectForKey:@"bio"] ];
+    
+    if ( [rawMessage characterAtIndex:0] == '@') {
+        NSArray *list = [rawMessage componentsSeparatedByString:@","];
+        if ( list.count > 4) {
+            NSString *cleanName = [list objectAtIndex:0];
+            cleanName = [cleanName substringFromIndex:1];
+            
+            DatabaseUtils *utils = [[DatabaseUtils alloc] init];
+            NSMutableArray *profilesWithThatName = [utils getProfileByName:cleanName];
+            if ( profilesWithThatName.count == 0) {
+                // Now is save to insert
+                [utils addProfile:cleanName withTwitter:[list objectAtIndex:3] andPhone:[list objectAtIndex:2] emailAddress:[list objectAtIndex:1] image:nil];
+            }
+        }
+    }
 }
 
 @end

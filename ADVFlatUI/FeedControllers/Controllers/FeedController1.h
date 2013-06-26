@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "PeerToPeerManager.h"
+#import "DatabaseUtils.h"
 
-@interface FeedController1 : UIViewController <UITableViewDataSource,MCBrowserViewControllerDelegate>
+@interface FeedController1 : UIViewController <UITableViewDataSource, MCBrowserViewControllerDelegate, AroundProtocol>
 
 @property (nonatomic, weak) IBOutlet UITableView* feedTableView;
 @property (nonatomic, strong) PeerToPeerManager *manager;

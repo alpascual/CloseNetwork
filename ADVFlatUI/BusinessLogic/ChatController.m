@@ -200,11 +200,30 @@
     return YES;
 }
 
-// TODO
+
 // Add it into the database
 - (void) chatArrived:(NSString*) rawMessage
 {
-    
+    if ( [rawMessage characterAtIndex:0] == '!') {
+        
+        NSArray *list = [rawMessage componentsSeparatedByString:@","];
+        
+        // Glab username
+        NSString *theUsername = [list objectAtIndex:0];
+        theUsername = [theUsername substringFromIndex:1];
+        
+        //Grab message
+        NSMutableString *theText = [[NSMutableString alloc] init];
+        for (int i=1; i<list.count; i++) {
+            [theText appendString:[list objectAtIndex:i]];
+        }
+        
+        DatabaseUtils *utils = [[DatabaseUtils alloc] init];
+        [utils addMessages:theUsername msg:theText];
+        self.allMessages = [utils getAllMessages];
+        
+        [self.tableView reloadData];
+    }
 }
 
 @end

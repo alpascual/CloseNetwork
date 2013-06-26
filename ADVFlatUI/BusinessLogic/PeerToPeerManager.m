@@ -81,12 +81,13 @@
     if ( message.length > 0 ) {
         if ( [message characterAtIndex:0] == '!' ) {
             NSLog(@"%@", message);
-            // TODO add it into the chat
+            // add it into the chat
             [self.aroundDelegate chatArrived:message];
         }
         else if ( [message characterAtIndex:0] == '@') {
             NSLog(@"%@", message);
-            // TODO create a profile
+            // add create a profile
+            [self.aroundDelegate profileArrived:message];
         }
         else
         {
@@ -108,8 +109,6 @@
 - (void)session:(MCSession *)session didReceiveStream:(NSInputStream *)stream withName:(NSString *)streamName fromPeer:(MCPeerID *)peerID {
     
     NSLog(@"MCSessionDelegate :: didReceiveStream :: Received Stream %@ from %@",[stream description],peerID);
-    
-    
     
 }
 

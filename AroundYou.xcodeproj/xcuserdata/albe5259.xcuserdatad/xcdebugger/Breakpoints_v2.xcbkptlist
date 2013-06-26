@@ -121,7 +121,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"
             endingLineNumber = "96"
-            landmarkName = "-session:didReceiveResourceAtURL:fromPeer:"
+            landmarkName = "-session:didReceiveData:fromPeer:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -137,7 +137,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
             endingLineNumber = "102"
-            landmarkName = "-session:didReceiveStream:withName:fromPeer:"
+            landmarkName = "-session:didReceiveResourceAtURL:fromPeer:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -153,23 +153,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "110"
             endingLineNumber = "110"
-            landmarkName = "-session:peer:didChangeState:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ADVFlatUI/BusinessLogic/PeerToPeerManager.m"
-            timestampString = "393892486.485743"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "-sendTextOnly:"
+            landmarkName = "-session:didReceiveStream:withName:fromPeer:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -195,13 +179,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ADVFlatUI/BusinessLogic/ChatController.m"
-            timestampString = "393894246.797751"
+            filePath = "ADVFlatUI/BusinessLogic/Database/DatabaseUtils.m"
+            timestampString = "393894764.550794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "-tableView:numberOfRowsInSection:"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "-addMessages:msg:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -239,6 +239,21 @@
         NSLog(@"Whoops, couldn't save : %@", [error localizedDescription]);
 }
 
+- (NSMutableArray *) getProfileByName:(NSString *) username {
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Profiles" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name == %@", username]];
+    
+    NSError *error;
+    NSArray *fetchedObjects = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    return [[NSMutableArray alloc] initWithArray:fetchedObjects];
+}
+
 - (void) addProfile:(NSString*)username withTwitter:(NSString*)twitter andPhone:(NSString*)phone emailAddress:(NSString*)email image:(NSData*)picture
 {
     Profiles *pro = [NSEntityDescription
