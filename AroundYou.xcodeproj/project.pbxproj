@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76134EEB177A988600A0F1E3 /* AroundProtocol.h in Sources */ = {isa = PBXBuildFile; fileRef = 76134EEA177A982F00A0F1E3 /* AroundProtocol.h */; };
 		76A10DC31771517B00A9B62F /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */; };
 		76A10DC4177152CF00A9B62F /* PeerToPeerManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */; };
 		76A10DC5177152CF00A9B62F /* PeerToPeerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */; };
@@ -173,6 +174,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76134EEA177A982F00A0F1E3 /* AroundProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AroundProtocol.h; sourceTree = "<group>"; };
 		76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeerToPeerManager.h; sourceTree = "<group>"; };
 		76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerToPeerManager.m; sourceTree = "<group>"; };
 		76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
@@ -402,6 +404,7 @@
 				8842FF3C17738448005863E4 /* EditProfileViewController.m */,
 				8848BF791778EBC400062770 /* ChatController.h */,
 				8848BF7A1778EBC400062770 /* ChatController.m */,
+				76134EEA177A982F00A0F1E3 /* AroundProtocol.h */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -1051,6 +1054,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76134EEB177A988600A0F1E3 /* AroundProtocol.h in Sources */,
 				88749539177A2D9500A8D36B /* DatabaseUtils.h in Sources */,
 				8874953A177A2D9500A8D36B /* DatabaseUtils.m in Sources */,
 				8874953B177A2D9500A8D36B /* Profiles.h in Sources */,

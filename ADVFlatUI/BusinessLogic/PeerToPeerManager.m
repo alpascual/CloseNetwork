@@ -73,12 +73,20 @@
     // TODO: Create a delegate to receive messages
     NSString * message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     
+    if ( message == nil)
+    {
+        // Its data only, must be the picture
+    }
+    
     if ( message.length > 0 ) {
         if ( [message characterAtIndex:0] == '!' ) {
             NSLog(@"%@", message);
+            // TODO add it into the chat
+            [self.aroundDelegate chatArrived:message];
         }
         else if ( [message characterAtIndex:0] == '@') {
             NSLog(@"%@", message);
+            // TODO create a profile
         }
         else
         {
@@ -109,13 +117,22 @@
     
     NSLog(@"MCSessionDelegate :: didChangeState :: PeerId %@ changed to state %d",peerID,state);
     
+    self.globalState = state;
+    
     if (state == MCSessionStateConnected && self.session) {
         
         NSError *error;
+        // Broadcast the profile
         
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString *profileToSend = [[NSString alloc] initWithFormat:@"@%@,%@,%@,%@,%@", [defaults objectForKey:@"name"], [defaults objectForKey:@"email"], [defaults objectForKey:@"phone"], [defaults objectForKey:@"twitter"], [defaults objectForKey:@"bio"] ];
+  
         // ACTION: Send messages here as broadcast!!!
         // TODO:  create a method to send messages
-        [self.session sendData:[@"HELLO" dataUsingEncoding:NSUTF8StringEncoding] toPeers:[NSArray arrayWithObject:peerID] withMode:MCSessionSendDataReliable error:&error];
+        [self.session sendData:[profileToSend dataUsingEncoding:NSUTF8StringEncoding] toPeers:[NSArray arrayWithObject:peerID] withMode:MCSessionSendDataReliable error:&error];
+        
+        // Send picture after
+        [self.session sendData:[defaults objectForKey:@"profile_Image"] toPeers:[NSArray arrayWithObject:peerID] withMode:MCSessionSendDataReliable error:&error];
         
     }
     

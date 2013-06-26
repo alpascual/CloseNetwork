@@ -72,6 +72,7 @@
     }*/
     
     self.manager = [[PeerToPeerManager alloc] init];
+    self.manager.aroundDelegate = self;
     
     self.delaytimer = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:
                        @selector(delayManager:) userInfo:nil repeats:NO];
@@ -197,6 +198,13 @@
 {
     NSLog(@"all invited peer %@ with info %@", peerID, info);
     return YES;
+}
+
+// TODO
+// Add it into the database
+- (void) chatArrived:(NSString*) rawMessage
+{
+    
 }
 
 @end

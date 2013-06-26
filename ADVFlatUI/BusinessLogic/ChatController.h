@@ -11,8 +11,9 @@
 #import "PeerToPeerManager.h"
 #import "DatabaseUtils.h"
 #import "TSMessage.h"
+#import "AroundProtocol.h"
 
-@interface ChatController : JSMessagesViewController <JSMessagesViewDelegate, JSMessagesViewDataSource,MCBrowserViewControllerDelegate>
+@interface ChatController : JSMessagesViewController <JSMessagesViewDelegate, JSMessagesViewDataSource,MCBrowserViewControllerDelegate, AroundProtocol>
 
 /*@property (strong, nonatomic) NSMutableArray *messages;
 @property (strong, nonatomic) NSMutableArray *timestamps;
