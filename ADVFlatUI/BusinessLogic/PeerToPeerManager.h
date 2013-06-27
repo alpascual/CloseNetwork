@@ -12,7 +12,7 @@
 
 @interface PeerToPeerManager : NSObject <MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate>
 
-//@property (nonatomic,strong) MCPeerPickerViewController *peer;
+
 @property (strong, nonatomic) MCSession * session;
 @property (strong, nonatomic) MCPeerID * myPeerId;
 @property (strong, nonatomic) MCNearbyServiceBrowser *browser;

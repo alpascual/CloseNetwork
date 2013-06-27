@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		76134EEB177A988600A0F1E3 /* AroundProtocol.h in Sources */ = {isa = PBXBuildFile; fileRef = 76134EEA177A982F00A0F1E3 /* AroundProtocol.h */; };
+		76134F96177BEFB000A0F1E3 /* CHAvatarView.h in Sources */ = {isa = PBXBuildFile; fileRef = 76134F84177BEF6500A0F1E3 /* CHAvatarView.h */; };
+		76134F97177BEFB000A0F1E3 /* CHAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76134F85177BEF6500A0F1E3 /* CHAvatarView.m */; };
+		76134F98177BEFB000A0F1E3 /* CHDraggableView+Avatar.h in Sources */ = {isa = PBXBuildFile; fileRef = 76134F86177BEF6500A0F1E3 /* CHDraggableView+Avatar.h */; };
+		76134F99177BEFB000A0F1E3 /* CHDraggableView+Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76134F87177BEF6500A0F1E3 /* CHDraggableView+Avatar.m */; };
+		76134F9A177BEFB000A0F1E3 /* CHDraggableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 76134F88177BEF6500A0F1E3 /* CHDraggableView.h */; };
+		76134F9B177BEFB000A0F1E3 /* CHDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76134F89177BEF6500A0F1E3 /* CHDraggableView.m */; };
+		76134F9C177BEFB000A0F1E3 /* CHDraggingCoordinator.h in Sources */ = {isa = PBXBuildFile; fileRef = 76134F8A177BEF6500A0F1E3 /* CHDraggingCoordinator.h */; };
+		76134F9D177BEFB000A0F1E3 /* CHDraggingCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 76134F8B177BEF6500A0F1E3 /* CHDraggingCoordinator.m */; };
+		76134F9E177BEFC000A0F1E3 /* CAAnimation+Blocks.h in Sources */ = {isa = PBXBuildFile; fileRef = 76134F8E177BEF6500A0F1E3 /* CAAnimation+Blocks.h */; };
+		76134F9F177BEFC000A0F1E3 /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 76134F8F177BEF6500A0F1E3 /* CAAnimation+Blocks.m */; };
+		76134FA0177BEFC000A0F1E3 /* SKBounceAnimation.h in Sources */ = {isa = PBXBuildFile; fileRef = 76134F91177BEF6500A0F1E3 /* SKBounceAnimation.h */; };
+		76134FA1177BEFC000A0F1E3 /* SKBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76134F92177BEF6500A0F1E3 /* SKBounceAnimation.m */; };
 		76A10DC31771517B00A9B62F /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */; };
 		76A10DC4177152CF00A9B62F /* PeerToPeerManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */; };
 		76A10DC5177152CF00A9B62F /* PeerToPeerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */; };
@@ -175,6 +187,19 @@
 
 /* Begin PBXFileReference section */
 		76134EEA177A982F00A0F1E3 /* AroundProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AroundProtocol.h; sourceTree = "<group>"; };
+		76134F84177BEF6500A0F1E3 /* CHAvatarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAvatarView.h; sourceTree = "<group>"; };
+		76134F85177BEF6500A0F1E3 /* CHAvatarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAvatarView.m; sourceTree = "<group>"; };
+		76134F86177BEF6500A0F1E3 /* CHDraggableView+Avatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHDraggableView+Avatar.h"; sourceTree = "<group>"; };
+		76134F87177BEF6500A0F1E3 /* CHDraggableView+Avatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CHDraggableView+Avatar.m"; sourceTree = "<group>"; };
+		76134F88177BEF6500A0F1E3 /* CHDraggableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDraggableView.h; sourceTree = "<group>"; };
+		76134F89177BEF6500A0F1E3 /* CHDraggableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDraggableView.m; sourceTree = "<group>"; };
+		76134F8A177BEF6500A0F1E3 /* CHDraggingCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHDraggingCoordinator.h; sourceTree = "<group>"; };
+		76134F8B177BEF6500A0F1E3 /* CHDraggingCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHDraggingCoordinator.m; sourceTree = "<group>"; };
+		76134F8E177BEF6500A0F1E3 /* CAAnimation+Blocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Blocks.h"; sourceTree = "<group>"; };
+		76134F8F177BEF6500A0F1E3 /* CAAnimation+Blocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+Blocks.m"; sourceTree = "<group>"; };
+		76134F91177BEF6500A0F1E3 /* SKBounceAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBounceAnimation.h; sourceTree = "<group>"; };
+		76134F92177BEF6500A0F1E3 /* SKBounceAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBounceAnimation.m; sourceTree = "<group>"; };
+		76134F95177BEF6500A0F1E3 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		76A10DC0177150FD00A9B62F /* PeerToPeerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeerToPeerManager.h; sourceTree = "<group>"; };
 		76A10DC1177150FD00A9B62F /* PeerToPeerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerToPeerManager.m; sourceTree = "<group>"; };
 		76A10DC21771517B00A9B62F /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
@@ -393,6 +418,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76134F82177BEF6500A0F1E3 /* ChatHeads */ = {
+			isa = PBXGroup;
+			children = (
+				76134F83177BEF6500A0F1E3 /* Classes */,
+				76134F8C177BEF6500A0F1E3 /* Externals */,
+				76134F93177BEF6500A0F1E3 /* Resources */,
+			);
+			path = ChatHeads;
+			sourceTree = "<group>";
+		};
+		76134F83177BEF6500A0F1E3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				76134F84177BEF6500A0F1E3 /* CHAvatarView.h */,
+				76134F85177BEF6500A0F1E3 /* CHAvatarView.m */,
+				76134F86177BEF6500A0F1E3 /* CHDraggableView+Avatar.h */,
+				76134F87177BEF6500A0F1E3 /* CHDraggableView+Avatar.m */,
+				76134F88177BEF6500A0F1E3 /* CHDraggableView.h */,
+				76134F89177BEF6500A0F1E3 /* CHDraggableView.m */,
+				76134F8A177BEF6500A0F1E3 /* CHDraggingCoordinator.h */,
+				76134F8B177BEF6500A0F1E3 /* CHDraggingCoordinator.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		76134F8C177BEF6500A0F1E3 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				76134F8D177BEF6500A0F1E3 /* CAAnimationBlocks */,
+				76134F90177BEF6500A0F1E3 /* SKBounceAnimation */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		76134F8D177BEF6500A0F1E3 /* CAAnimationBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				76134F8E177BEF6500A0F1E3 /* CAAnimation+Blocks.h */,
+				76134F8F177BEF6500A0F1E3 /* CAAnimation+Blocks.m */,
+			);
+			path = CAAnimationBlocks;
+			sourceTree = "<group>";
+		};
+		76134F90177BEF6500A0F1E3 /* SKBounceAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				76134F91177BEF6500A0F1E3 /* SKBounceAnimation.h */,
+				76134F92177BEF6500A0F1E3 /* SKBounceAnimation.m */,
+			);
+			path = SKBounceAnimation;
+			sourceTree = "<group>";
+		};
+		76134F93177BEF6500A0F1E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76134F94177BEF6500A0F1E3 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		76134F94177BEF6500A0F1E3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				76134F95177BEF6500A0F1E3 /* avatar.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		76A10DBF177150D800A9B62F /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
@@ -600,6 +693,7 @@
 		EC0831B0175788FE00EDE244 /* ADVFlatUI */ = {
 			isa = PBXGroup;
 			children = (
+				76134F82177BEF6500A0F1E3 /* ChatHeads */,
 				8848BF4B1778E23100062770 /* JSMessagesTableViewController */,
 				76A10DBF177150D800A9B62F /* BusinessLogic */,
 				ECDA36B7175F934100529F64 /* SidebarControllers */,
@@ -1054,6 +1148,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76134F9E177BEFC000A0F1E3 /* CAAnimation+Blocks.h in Sources */,
+				76134F9F177BEFC000A0F1E3 /* CAAnimation+Blocks.m in Sources */,
+				76134FA0177BEFC000A0F1E3 /* SKBounceAnimation.h in Sources */,
+				76134FA1177BEFC000A0F1E3 /* SKBounceAnimation.m in Sources */,
+				76134F96177BEFB000A0F1E3 /* CHAvatarView.h in Sources */,
+				76134F97177BEFB000A0F1E3 /* CHAvatarView.m in Sources */,
+				76134F98177BEFB000A0F1E3 /* CHDraggableView+Avatar.h in Sources */,
+				76134F99177BEFB000A0F1E3 /* CHDraggableView+Avatar.m in Sources */,
+				76134F9A177BEFB000A0F1E3 /* CHDraggableView.h in Sources */,
+				76134F9B177BEFB000A0F1E3 /* CHDraggableView.m in Sources */,
+				76134F9C177BEFB000A0F1E3 /* CHDraggingCoordinator.h in Sources */,
+				76134F9D177BEFB000A0F1E3 /* CHDraggingCoordinator.m in Sources */,
 				76134EEB177A988600A0F1E3 /* AroundProtocol.h in Sources */,
 				88749539177A2D9500A8D36B /* DatabaseUtils.h in Sources */,
 				8874953A177A2D9500A8D36B /* DatabaseUtils.m in Sources */,

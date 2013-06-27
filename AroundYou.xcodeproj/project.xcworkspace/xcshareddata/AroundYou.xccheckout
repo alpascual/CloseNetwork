@@ -15,6 +15,8 @@
 	<string>AroundYou.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>4DBD869D-1BCB-43EA-BD35-24C8B75B9DCA</key>
+		<string>../../ADVFlatUI/BusinessLogic/ChatHeads/Externals/SKBounceAnimation</string>
 		<key>671F8174-F1AA-41C9-B551-F4B06791FC64</key>
 		<string>../..</string>
 	</dict>
@@ -33,6 +35,14 @@
 			<string>671F8174-F1AA-41C9-B551-F4B06791FC64</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CloseNetwork</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4DBD869D-1BCB-43EA-BD35-24C8B75B9DCA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SKBounceAnimation</string>
 		</dict>
 	</array>
 </dict>
