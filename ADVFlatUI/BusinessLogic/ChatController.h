@@ -23,5 +23,6 @@
 @property (strong, nonatomic) PeerToPeerManager *manager;
 @property (strong, nonatomic) NSTimer *delaytimer;
 @property (strong, nonatomic) NSString *myUsername;
+@property (strong, nonatomic) DatabaseUtils *databaseUtils;
 
 @end

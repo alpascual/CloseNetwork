@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PeerToPeerManager.h"
 #import "DatabaseUtils.h"
+#import "AroundProtocol.h"
 
 @interface FeedController1 : UIViewController <UITableViewDataSource, MCBrowserViewControllerDelegate, AroundProtocol>
 
@@ -16,5 +17,6 @@
 @property (nonatomic, strong) PeerToPeerManager *manager;
 @property (nonatomic, strong) NSTimer *delaytimer;
 @property (nonatomic, strong) NSMutableArray *airDropArray;
+@property (strong, nonatomic) DatabaseUtils *databaseUtils;
 
 @end

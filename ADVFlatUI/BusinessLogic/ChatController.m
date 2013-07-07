@@ -63,8 +63,8 @@
     self.usernames = [[NSMutableArray alloc] init];*/
     //TODO maybe restore the previous session?
     
-    DatabaseUtils *utils = [[DatabaseUtils alloc] init];
-    self.allMessages = [utils getAllMessages];
+    self.databaseUtils = [[DatabaseUtils alloc] init];
+    self.allMessages = [self.databaseUtils getAllMessages];
     /*for (Messages *message in self.allMessages) {
         [self.messages addObject:message.msg];
         [self.timestamps addObject:message.timestamp];
@@ -116,9 +116,8 @@
         
         [JSMessageSoundEffect playMessageSentSound];
         
-        DatabaseUtils *utils = [[DatabaseUtils alloc] init];
-        [utils addMessages:self.myUsername msg:text];        
-        self.allMessages = [utils getAllMessages];
+        [self.databaseUtils addMessages:self.myUsername msg:text];
+        self.allMessages = [self.databaseUtils getAllMessages];
         
         [self finishSend];
     }
@@ -218,11 +217,29 @@
             [theText appendString:[list objectAtIndex:i]];
         }
         
-        DatabaseUtils *utils = [[DatabaseUtils alloc] init];
-        [utils addMessages:theUsername msg:theText];
-        self.allMessages = [utils getAllMessages];
+        [self.databaseUtils addMessages:theUsername msg:theText];
+        self.allMessages = [self.databaseUtils getAllMessages];
         
         [self.tableView reloadData];
+    }
+}
+
+- (void) profileArrived:(NSString*) rawMessage
+{
+    //NSString *profileToSend = [[NSString alloc] initWithFormat:@"@%@,%@,%@,%@,%@", [defaults objectForKey:@"name"], [defaults objectForKey:@"email"], [defaults objectForKey:@"phone"], [defaults objectForKey:@"twitter"], [defaults objectForKey:@"bio"] ];
+    
+    if ( [rawMessage characterAtIndex:0] == '@') {
+        NSArray *list = [rawMessage componentsSeparatedByString:@","];
+        if ( list.count > 4) {
+            NSString *cleanName = [list objectAtIndex:0];
+            cleanName = [cleanName substringFromIndex:1];            
+            
+            NSMutableArray *profilesWithThatName = [self.databaseUtils getProfileByName:cleanName];
+            if ( profilesWithThatName.count == 0) {
+                // Now is save to insert
+                [self.databaseUtils addProfile:cleanName withTwitter:[list objectAtIndex:3] andPhone:[list objectAtIndex:2] emailAddress:[list objectAtIndex:1] image:nil];
+            }
+        }
     }
 }
 

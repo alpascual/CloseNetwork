@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 #import "AroundProtocol.h"
+#import "DatabaseUtils.h"
 
 @interface PeerToPeerManager : NSObject <MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate>
 
@@ -20,6 +21,7 @@
 @property (strong, nonatomic) MCBrowserViewController *peerBrowser;
 @property (nonatomic) MCSessionState globalState;
 @property (strong, nonatomic) id <AroundProtocol> aroundDelegate;
+
 
 - (MCBrowserViewController*) showViewController;
 

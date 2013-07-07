@@ -87,7 +87,7 @@
         else if ( [message characterAtIndex:0] == '@') {
             NSLog(@"%@", message);
             // add create a profile
-            [self.aroundDelegate profileArrived:message];
+           [self.aroundDelegate profileArrived:message];
         }
         else
         {

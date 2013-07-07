@@ -38,6 +38,8 @@
     self.manager = [[PeerToPeerManager alloc] init];
     self.manager.aroundDelegate = self;
     
+    self.databaseUtils = [[DatabaseUtils alloc] init];
+    
     self.delaytimer = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:
                        @selector(delayManager:) userInfo:nil repeats:NO];
     
@@ -191,13 +193,33 @@
             NSString *cleanName = [list objectAtIndex:0];
             cleanName = [cleanName substringFromIndex:1];
             
-            DatabaseUtils *utils = [[DatabaseUtils alloc] init];
-            NSMutableArray *profilesWithThatName = [utils getProfileByName:cleanName];
+            
+            NSMutableArray *profilesWithThatName = [self.databaseUtils getProfileByName:cleanName];
             if ( profilesWithThatName.count == 0) {
                 // Now is save to insert
-                [utils addProfile:cleanName withTwitter:[list objectAtIndex:3] andPhone:[list objectAtIndex:2] emailAddress:[list objectAtIndex:1] image:nil];
+                [self.databaseUtils addProfile:cleanName withTwitter:[list objectAtIndex:3] andPhone:[list objectAtIndex:2] emailAddress:[list objectAtIndex:1] image:nil];
             }
         }
+    }
+}
+
+- (void) chatArrived:(NSString*) rawMessage
+{
+    if ( [rawMessage characterAtIndex:0] == '!') {
+        
+        NSArray *list = [rawMessage componentsSeparatedByString:@","];
+        
+        // Glab username
+        NSString *theUsername = [list objectAtIndex:0];
+        theUsername = [theUsername substringFromIndex:1];
+        
+        //Grab message
+        NSMutableString *theText = [[NSMutableString alloc] init];
+        for (int i=1; i<list.count; i++) {
+            [theText appendString:[list objectAtIndex:i]];
+        }
+        
+        [self.databaseUtils addMessages:theUsername msg:theText];        
     }
 }
 
