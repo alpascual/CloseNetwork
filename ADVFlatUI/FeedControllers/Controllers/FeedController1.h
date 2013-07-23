@@ -18,5 +18,6 @@
 @property (nonatomic, strong) NSTimer *delaytimer;
 @property (nonatomic, strong) NSMutableArray *airDropArray;
 @property (strong, nonatomic) DatabaseUtils *databaseUtils;
+@property (strong, nonatomic) NSArray *allProfiles;
 
 @end

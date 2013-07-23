@@ -57,6 +57,7 @@
     [timer invalidate];
     timer = nil;
     
+    // Maybe does not need to show people around you at all
     [self.manager showViewController];
     self.manager.peerBrowser.delegate = self;
     [self presentViewController:self.manager.peerBrowser animated:YES completion:nil];
@@ -107,14 +108,25 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 4;
+    self.allProfiles = [self.databaseUtils getAllProfiles];
+    
+    return self.allProfiles.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     FeedCell1* cell = [tableView dequeueReusableCellWithIdentifier:@"FeedCell1"];
     
-    if(indexPath.row % 2){
+    Profiles *tempProfile = [self.allProfiles objectAtIndex:indexPath.row];
+    
+    cell.nameLabel.text = tempProfile.name;
+    cell.updateLabel.text = tempProfile.twitter;
+    cell.likeCountLabel.text = tempProfile.email;
+    cell.commentCountLabel.text = tempProfile.phone;
+    cell.picImageView.image = [UIImage imageWithData:tempProfile.picture];
+    
+    
+    /*if(indexPath.row % 2){
         cell.nameLabel.text = @"Laura Leamington";
         cell.updateLabel.text = @"This is a pic I took while on holiday on Wales. The weather played along nicely which doesn't happen often";
 
@@ -132,6 +144,7 @@
         cell.commentCountLabel.text = @"21";
         cell.picImageView.image = [UIImage imageNamed:@"feed-bridge.jpg"];
     }
+    */
     
     return cell;
 }
