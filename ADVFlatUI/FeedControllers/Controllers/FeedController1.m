@@ -206,6 +206,7 @@
             NSString *cleanName = [list objectAtIndex:0];
             cleanName = [cleanName substringFromIndex:1];
             
+            self.lastName = cleanName;
             
             NSMutableArray *profilesWithThatName = [self.databaseUtils getProfileByName:cleanName];
             if ( profilesWithThatName.count == 0) {
@@ -234,6 +235,11 @@
         
         [self.databaseUtils addMessages:theUsername msg:theText];        
     }
+}
+
+- (void) pictureArrived:(NSData*) rawMessage
+{
+    [self.databaseUtils addPictureForUsername:self.lastName withPicture:rawMessage];
 }
 
 @end

@@ -272,6 +272,19 @@
         NSLog(@"Whoops, couldn't save : %@", [error localizedDescription]);
 }
 
+- (void) addPictureForUsername:(NSString*)username withPicture:(NSData*)picture
+{
+    NSArray *profileArray = [self getProfileByName:username];
+    if ( profileArray.count > 0) {
+        Profiles *pro = [profileArray objectAtIndex:0];
+        pro.picture = picture;
+        
+        NSError *error;
+        if (![self.managedObjectContext save:&error])
+            NSLog(@"Whoops, couldn't save : %@", [error localizedDescription]);
+    }
+}
+
 /*
 - (NSArray *) getAllFollowers {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];

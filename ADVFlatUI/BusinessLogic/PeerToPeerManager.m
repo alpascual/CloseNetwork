@@ -76,6 +76,7 @@
     if ( message == nil)
     {
         // Its data only, must be the picture
+        [self.aroundDelegate pictureArrived:data];
     }
     
     if ( message.length > 0 ) {

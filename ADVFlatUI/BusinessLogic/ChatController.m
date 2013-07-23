@@ -232,7 +232,9 @@
         NSArray *list = [rawMessage componentsSeparatedByString:@","];
         if ( list.count > 4) {
             NSString *cleanName = [list objectAtIndex:0];
-            cleanName = [cleanName substringFromIndex:1];            
+            cleanName = [cleanName substringFromIndex:1];
+            
+            self.lastName = cleanName;
             
             NSMutableArray *profilesWithThatName = [self.databaseUtils getProfileByName:cleanName];
             if ( profilesWithThatName.count == 0) {
@@ -241,6 +243,11 @@
             }
         }
     }
+}
+
+- (void) pictureArrived:(NSData*) rawMessage
+{
+    [self.databaseUtils addPictureForUsername:self.lastName withPicture:rawMessage];
 }
 
 @end

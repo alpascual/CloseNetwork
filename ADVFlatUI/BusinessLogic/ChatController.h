@@ -24,5 +24,6 @@
 @property (strong, nonatomic) NSTimer *delaytimer;
 @property (strong, nonatomic) NSString *myUsername;
 @property (strong, nonatomic) DatabaseUtils *databaseUtils;
+@property (strong, nonatomic) NSString *lastName;
 
 @end

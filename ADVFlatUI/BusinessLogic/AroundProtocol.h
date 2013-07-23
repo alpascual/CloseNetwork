@@ -14,5 +14,6 @@
 
 - (void) chatArrived:(NSString*) rawMessage;
 - (void) profileArrived:(NSString*) rawMessage;
+- (void) pictureArrived:(NSData*) rawMessage;
 
 @end

@@ -19,5 +19,6 @@
 @property (nonatomic, strong) NSMutableArray *airDropArray;
 @property (strong, nonatomic) DatabaseUtils *databaseUtils;
 @property (strong, nonatomic) NSArray *allProfiles;
+@property (strong, nonatomic) NSString *lastName;
 
 @end
