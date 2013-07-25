@@ -32,7 +32,7 @@
     
     [navAppearance setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                            [UIColor whiteColor], UITextAttributeTextColor,
-                                           [UIFont fontWithName:navigationTitleFont size:18.0f], UITextAttributeFont,
+                                           [UIFont fontWithName:navigationTitleFont size:18.0f], NSFontAttributeName,
                                            nil]];
     
 }

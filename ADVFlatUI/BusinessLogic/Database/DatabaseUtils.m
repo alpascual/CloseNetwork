@@ -274,6 +274,8 @@
 
 - (void) addPictureForUsername:(NSString*)username withPicture:(NSData*)picture
 {
+    NSLog(@"Adding picture for the last user %@", username);
+    
     NSArray *profileArray = [self getProfileByName:username];
     if ( profileArray.count > 0) {
         Profiles *pro = [profileArray objectAtIndex:0];
