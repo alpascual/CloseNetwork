@@ -168,34 +168,6 @@
         <image name="comment.png" width="32" height="32"/>
         <image name="heart.png" width="32" height="28"/>
     </resources>
-    <classes>
-        <class className="ChatController" superclassName="JSMessagesViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ChatController.h"/>
-        </class>
-        <class className="FeedCell1" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeedCell1.h"/>
-            <relationships>
-                <relationship kind="outlet" name="commentCountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="commentIconImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="feedContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="likeCountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="likeIconImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="picImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="updateLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="FeedController1" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeedController1.h"/>
-            <relationships>
-                <relationship kind="outlet" name="feedTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="JSMessagesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JSMessagesViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
